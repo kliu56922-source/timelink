@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "default_pattern_id": "vanguard",
+  "card_pattern_overrides": {
+    "P02": "piece_knight",
+    "P03": "piece_pawn"
+  },
+  "patterns": {
+    "vanguard": {
+      "movement_offsets": [[-1, 0], [1, 0], [0, -1]],
+      "attack_offsets": [[-1, -1], [0, -1], [1, -1]],
+      "attack_moves_attacker": false
+    },
+    "piece_pawn": {
+      "movement_offsets": [[0, -1]],
+      "attack_offsets": [[-1, -1], [0, -1], [1, -1]],
+      "attack_moves_attacker": false,
+      "ignores_intervening_units": false,
+      "ignores_engagement_for_move": false
+    },
+    "piece_knight": {
+      "movement_offsets": [[-2, -1], [-1, -2], [1, -2], [2, -1], [2, 1], [1, 2], [-1, 2], [-2, 1]],
+      "attack_offsets": [[-2, -1], [-1, -2], [1, -2], [2, -1], [2, 1], [1, 2], [-1, 2], [-2, 1]],
+      "attack_moves_attacker": false,
+      "ignores_intervening_units": true,
+      "ignores_engagement_for_move": true
+    },
+    "piece_bishop": {
+      "movement_offsets": [],
+      "attack_offsets": [],
+      "raycast_directions": [[-1, -1], [-1, 1], [1, -1], [1, 1]],
+      "attack_moves_attacker": false
+    },
+    "piece_rook": {
+      "movement_offsets": [],
+      "attack_offsets": [],
+      "raycast_directions": [[-1, 0], [1, 0], [0, -1], [0, 1]],
+      "attack_moves_attacker": false
+    }
+  }
+}

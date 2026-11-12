@@ -1,0 +1,73 @@
+{
+  "schema_version": 3,
+  "grid": {
+    "line_color": "#39D9FF",
+    "line_alpha": 0.26,
+    "surface_offset": 0.018,
+    "cell_inset_ratio": 0.76
+  },
+  "summon_marker": {
+    "color": "#42E9F5",
+    "radius_ratio": 0.21,
+    "fill_alpha": 0.30,
+    "ring_alpha": 0.86,
+    "hover_scale": 1.12
+  },
+  "timing": {
+    "confirm_flash_seconds": 0.08,
+    "overlay_fade_seconds": 0.18,
+    "reject_pulse_seconds": 0.14
+  },
+  "camera_framing": {
+    "board_width_ratio": 0.82,
+    "board_height_ratio": 0.56,
+    "fit_padding": 1.10,
+    "safe_top_ratio": 0.12,
+    "safe_bottom_ratio": 0.23
+  },
+  "token_footprint": {
+    "normal_cell_ratio": 0.55,
+    "ascended_cell_ratio": 0.62,
+    "art_fill_ratio": 0.75
+  },
+  "terrain": {
+    "level_step_ratio": 0.22,
+    "footprint_ratio": 0.78,
+    "cap_thickness_ratio": 0.035,
+    "body_color": "#263746",
+    "cap_color": "#405867",
+    "edge_color": "#9DEBFF",
+    "height_band_color": "#6FCDE2"
+  },
+  "terrain_feedback": {
+    "legal_color": "#42E9F5",
+    "pending_color": "#F4C95D",
+    "invalid_color": "#B84A52",
+    "label_color": "#E9F8FF"
+  },
+  "terrain_timing": {
+    "raise_seconds": 0.28,
+    "lower_seconds": 0.24,
+    "feedback_seconds": 0.12
+  },
+  "terrain_camera": {
+    "elevated_base_pitch": 60.0,
+    "top_pitch": 82.0,
+    "focus_pitch": 68.0,
+    "height_fit_padding": 1.20
+  },
+  "terrain_occlusion": {
+    "alpha_scissor_threshold": 0.50,
+    "checker_size": 4,
+    "outline_fallback": true
+  },
+  "surface_glyphs": {
+    "flat": "single_border",
+    "foundation": "corner_brackets",
+    "high_platform": "double_border",
+    "stable": "corner_clamps",
+    "overheated": "heat_hatch",
+    "ruins": "broken_border",
+    "undermined": "dashed_notch"
+  }
+}

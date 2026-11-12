@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "od_max": 10,
+  "zones": [
+    { "id": "Calm", "min": 0, "max": 3 },
+    { "id": "Heated", "min": 4, "max": 7 },
+    { "id": "Overdrive", "min": 8, "max": 10 }
+  ],
+  "depth": {
+    "max": 6,
+    "end_turn_recover": 2,
+    "backlash_threshold": 6,
+    "control_reduce": 1
+  },
+  "stable_combat_od": {
+    "first_unit_damage": 1,
+    "first_enemy_destroyed": 1,
+    "player_turn_cap": 2,
+    "boss_turn_core_damage_comeback": 1
+  }
+}

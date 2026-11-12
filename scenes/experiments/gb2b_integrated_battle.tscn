@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb1_integrated_battle.tscn" id="1_gb1"]
+[ext_resource type="Script" path="res://scenes/experiments/gb2b_integrated_battle.gd" id="2_gb2b"]
+
+[node name="GB2BIntegratedBattle" instance=ExtResource("1_gb1")]
+script = ExtResource("2_gb2b")
+
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "阵地对决 · 攻城与断层"
+
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "观察攻墙与降地预告，选择修补、升地或继续进攻。目标：击败熔炉守卫。"

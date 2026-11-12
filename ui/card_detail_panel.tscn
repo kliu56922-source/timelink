@@ -1,0 +1,285 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://ui/card_detail_panel.gd" id="1_script"]
+
+[sub_resource type="StyleBoxFlat" id="panel_style"]
+bg_color = Color(0.06, 0.06, 0.12, 0.94)
+border_width_left = 2
+border_width_right = 2
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(0.25, 0.25, 0.4, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="calm_inactive"]
+bg_color = Color(0.05, 0.08, 0.15, 1)
+border_width_left = 1
+border_width_right = 1
+border_width_top = 1
+border_width_bottom = 1
+border_color = Color(0.15, 0.22, 0.4, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="heated_inactive"]
+bg_color = Color(0.12, 0.07, 0.03, 1)
+border_width_left = 1
+border_width_right = 1
+border_width_top = 1
+border_width_bottom = 1
+border_color = Color(0.35, 0.18, 0.06, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="overdrive_inactive"]
+bg_color = Color(0.12, 0.03, 0.03, 1)
+border_width_left = 1
+border_width_right = 1
+border_width_top = 1
+border_width_bottom = 1
+border_color = Color(0.35, 0.06, 0.06, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="route_panel_style"]
+bg_color = Color(0.04, 0.04, 0.08, 1)
+border_width_left = 2
+border_width_right = 2
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(0.3, 0.3, 0.45, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="CardDetailPanel" type="Panel"]
+custom_minimum_size = Vector2(220, 320)
+layout_mode = 3
+anchors_preset = 0
+visible = false
+script = ExtResource("1_script")
+theme_override_styles/panel = SubResource("panel_style")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+offset_left = 10.0
+offset_top = 8.0
+offset_right = -10.0
+offset_bottom = -8.0
+theme_override_constants/separation = 2
+
+[node name="NameLabel" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="TypeLabel" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 13
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+
+[node name="RarityLabel" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 13
+
+[node name="RoleLabel" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 13
+
+[node name="CostLabel" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.9, 0.85, 0.6, 1)
+
+[node name="HSep1" type="HSeparator" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="DescriptionLabel" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="KeywordLabel" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.5, 0.9, 0.5, 1)
+
+[node name="ZoneBox" type="VBoxContainer" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="CalmPanel" type="Panel" parent="ScrollContainer/VBoxContainer/ZoneBox"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("calm_inactive")
+mouse_filter = 2
+
+[node name="CalmVBox" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/ZoneBox/CalmPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = -6.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CalmTitle" type="Label" parent="ScrollContainer/VBoxContainer/ZoneBox/CalmPanel/CalmVBox"]
+layout_mode = 2
+text = "Calm"
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(0.3, 0.55, 1, 1)
+
+[node name="CalmText" type="Label" parent="ScrollContainer/VBoxContainer/ZoneBox/CalmPanel/CalmVBox"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(0.7, 0.75, 0.9, 1)
+
+[node name="HeatedPanel" type="Panel" parent="ScrollContainer/VBoxContainer/ZoneBox"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("heated_inactive")
+mouse_filter = 2
+
+[node name="HeatedVBox" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/ZoneBox/HeatedPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = -6.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HeatedTitle" type="Label" parent="ScrollContainer/VBoxContainer/ZoneBox/HeatedPanel/HeatedVBox"]
+layout_mode = 2
+text = "Heated"
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(1, 0.55, 0.1, 1)
+
+[node name="HeatedText" type="Label" parent="ScrollContainer/VBoxContainer/ZoneBox/HeatedPanel/HeatedVBox"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(0.9, 0.8, 0.7, 1)
+
+[node name="OverdrivePanel" type="Panel" parent="ScrollContainer/VBoxContainer/ZoneBox"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("overdrive_inactive")
+mouse_filter = 2
+
+[node name="OverdriveVBox" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/ZoneBox/OverdrivePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = -6.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OverdriveTitle" type="Label" parent="ScrollContainer/VBoxContainer/ZoneBox/OverdrivePanel/OverdriveVBox"]
+layout_mode = 2
+text = "Overdrive"
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(1, 0.15, 0.05, 1)
+
+[node name="OverdriveText" type="Label" parent="ScrollContainer/VBoxContainer/ZoneBox/OverdrivePanel/OverdriveVBox"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(0.9, 0.7, 0.7, 1)
+
+[node name="ChainInfoLabel" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(1, 0.8, 0.4, 1)
+
+[node name="RouteHSep" type="HSeparator" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+visible = false
+
+[node name="RoutePanel" type="Panel" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+visible = false
+theme_override_styles/panel = SubResource("route_panel_style")
+mouse_filter = 2
+
+[node name="RouteVBox" type="VBoxContainer" parent="ScrollContainer/VBoxContainer/RoutePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = -6.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 2
+
+[node name="RouteNameLabel" type="Label" parent="ScrollContainer/VBoxContainer/RoutePanel/RouteVBox"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 13
+
+[node name="RouteStepLabel" type="Label" parent="ScrollContainer/VBoxContainer/RoutePanel/RouteVBox"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+
+[node name="RouteNextLabel" type="Label" parent="ScrollContainer/VBoxContainer/RoutePanel/RouteVBox"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.5, 0.9, 0.5, 1)
+
+[node name="RouteRewardLabel" type="Label" parent="ScrollContainer/VBoxContainer/RoutePanel/RouteVBox"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(1, 0.85, 0.3, 1)
+
+[node name="RouteRecommendLabel" type="Label" parent="ScrollContainer/VBoxContainer/RoutePanel/RouteVBox"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 12
+
+[node name="FlavorTextLabel" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = ""
+theme_override_font_sizes/font_size = 11
+theme_override_colors/font_color = Color(0.5, 0.5, 0.6, 1)

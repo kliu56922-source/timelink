@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb3h_frontline.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/gb3i_core_siege.gd" id="2"]
+
+[node name="CoreSiegeTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "炉心汇流 · 城防突破"
+
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "P04拦截敌军后压制该列城防。\n下个己方回合结束前，该列首次合法攻城可穿盾一次，仍受护甲和阶段保护。\n选中棋子看攻城预览；攻击选目标时看双方损失。\n卡牌、前线建筑与OD继续共同创造优势。"

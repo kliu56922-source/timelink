@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "initial_hp": 35,
+  "supply": 6,
+  "protected_opening": 6,
+  "deck_ids": [
+    "P05",
+    "S01",
+    "E01",
+    "E02",
+    "P01",
+    "R01",
+    "P23",
+    "P22",
+    "P07",
+    "P10",
+    "P08",
+    "P06",
+    "P02",
+    "P15",
+    "P03",
+    "P11",
+    "S03",
+    "P13",
+    "S02"
+  ],
+  "encounters": [
+    {
+      "id": "border_guard",
+      "display_name": "边境守卫",
+      "boss_hp": 18,
+      "phase_locks_enabled": false,
+      "inherit_boss_deck": false,
+      "boss_deck": {
+        "schema_version": 1,
+        "deck_id": "run_border",
+        "pools": {
+          "Calm": [
+            {
+              "card_id": "B-01",
+              "weight": 2
+            },
+            {
+              "card_id": "B-07",
+              "weight": 1
+            }
+          ],
+          "Heated": [
+            {
+              "card_id": "B-01",
+              "weight": 3
+            },
+            {
+              "card_id": "B-03",
+              "weight": 1
+            }
+          ],
+          "Overdrive": [
+            {
+              "card_id": "B-02",
+              "weight": 4
+            },
+            {
+              "card_id": "B-01",
+              "weight": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "furnace_patrol",
+      "display_name": "炉区巡卫",
+      "boss_hp": 28,
+      "phase_locks_enabled": false,
+      "inherit_boss_deck": false,
+      "boss_deck": {
+        "schema_version": 1,
+        "deck_id": "run_patrol",
+        "pools": {
+          "Calm": [
+            {
+              "card_id": "B-01",
+              "weight": 1
+            },
+            {
+              "card_id": "B-02",
+              "weight": 1
+            },
+            {
+              "card_id": "B-07",
+              "weight": 1
+            }
+          ],
+          "Heated": [
+            {
+              "card_id": "B-03",
+              "weight": 1
+            },
+            {
+              "card_id": "B-04",
+              "weight": 1
+            },
+            {
+              "card_id": "B-02",
+              "weight": 3
+            }
+          ],
+          "Overdrive": [
+            {
+              "card_id": "B-02",
+              "weight": 4
+            },
+            {
+              "card_id": "B-01",
+              "weight": 1
+            },
+            {
+              "card_id": "B-03",
+              "weight": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "forge_guard",
+      "display_name": "熔炉守卫",
+      "phase_locks_enabled": true,
+      "inherit_boss_deck": true
+    }
+  ]
+}

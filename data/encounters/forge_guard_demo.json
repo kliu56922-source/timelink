@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "encounter_id": "forge_guard_demo",
+  "boss_id": "forge_guard",
+  "boss_name_key": "boss.forge_guard.name",
+  "boss_start_hp": 85,
+  "boss_start_od": 0,
+  "boss_start_shield": 0,
+  "boss_deck_id": "forge_guard_deck",
+  "phase_locks": [
+    { "phase": 2, "hp_threshold": 55, "shield_gain": 5 },
+    { "phase": 3, "hp_threshold": 25, "shield_gain": 8 }
+  ]
+}

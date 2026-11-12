@@ -1,0 +1,6 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase62_ready_seven_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase63_core_damage_heat_trial.gd" id="2"]
+[node name="OriginalCoreHeatTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+core_damage_heat_profile = "original"

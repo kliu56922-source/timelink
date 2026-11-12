@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase67_deferred_ember_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase73_paid_hero_growth_trial.gd" id="2"]
+[node name="PaidHeroGrowthTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+growth_profile = "paid-hero-growth"
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "炉心精炼 · 付费续成长候选"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "延续下一回合兑余烬规则。实际升格的A01可查看炉心精炼。\nL3/L4时，每回合一次：支付5热及正常主动技能指令费用，转换5长期点。\n先查看当前费用与收益，再确认；没有伤害、免费指令或英雄棋型变更。\n候选规则，尚未证明自然胜率或最终平衡。"

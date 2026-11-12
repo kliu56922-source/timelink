@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "max_attacks_per_turn": 1,
+  "summoning_sickness_enabled": true,
+  "direct_attack": {
+    "enabled": true,
+    "blocker": "same_lane"
+  },
+  "guard": {
+    "forces_targeting": true,
+    "scope": "same_and_adjacent"
+  },
+  "resolution_mode": "simultaneous_hp",
+  "movement": {
+    "enabled": true,
+    "lane_count": 5,
+    "actions_per_turn": 1,
+    "self_move_action_cost": 1,
+    "summoning_sickness_blocks_self_move": true,
+    "forced_move_preserves_action": true,
+    "default_pattern": "step",
+    "allowed_patterns": ["step", "slide", "leap", "anchor"],
+    "spawn_lane_order": [2, 1, 3, 0, 4],
+    "mobility_by_card_id": {
+      "P02": "step",
+      "P03": "leap",
+      "P07": "slide",
+      "P10": "slide",
+      "P15": "anchor"
+    }
+  },
+  "boss_movement": {
+    "enabled": true,
+    "move_or_attack": true,
+    "tie_break": "nearest_center_then_lower_lane"
+  }
+}

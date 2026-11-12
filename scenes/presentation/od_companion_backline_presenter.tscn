@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://d26d_backline_presenter_001"]
+
+[ext_resource type="Script" path="res://scenes/presentation/od_companion_backline_presenter.gd" id="1_presenter"]
+
+[node name="ODCompanionBacklinePresenter" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("1_presenter")
+
+[node name="EnergyRail" type="Node3D" parent="."]
+
+[node name="PlayerGraveyardStation" type="Node3D" parent="."]
+
+[node name="ODCompanionStation" type="Node3D" parent="."]
+
+[node name="PlayerDeckStation" type="Node3D" parent="."]
+
+[node name="PresentationTimers" type="Node" parent="."]

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "cards": [
+    {
+      "id": "S03",
+      "cn_name": "炉役回收",
+      "en_name": "Boiler Salvage",
+      "card_type": "SPELL",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "archetype_role": "EXTENDER",
+      "od_cost": 1,
+      "engine_gain": 0,
+      "load_cost": 1,
+      "series_id": "steam_monster",
+      "search_tags": [
+        "steam",
+        "spell",
+        "recovery"
+      ],
+      "short_description_cn": "热量−1：墓地蒸汽普通棋子回手",
+      "full_description_cn": "无需选择地块。支付热量1，将墓地第一张蒸汽普通怪兽加入手牌，排除泰坦蒸汽机神。即使己方前场被清空也可使用；同名每回合一次。费用不足、无目标或没有手牌空间时不能使用，不消耗卡牌/热量。回收不是复活：仍须正常召唤，受前场容量和召唤病限制；此牌不获得基础热量。"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "enabled": false,
+  "card_ids": [
+    "P22"
+  ],
+  "module_kinds": [
+    "wall",
+    "gatehouse"
+  ]
+}

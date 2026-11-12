@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "cards": [
+    {
+      "id": "P04",
+      "name": "断频伏线",
+      "role": "控制",
+      "description": "布置合法地块，监视移动并阻止一次敌方前进。",
+      "related": "R01",
+      "related_name": "应急偏转"
+    },
+    {
+      "id": "P09",
+      "name": "超频脉冲",
+      "role": "加速",
+      "description": "支付当前费用，增加热量并抽牌；连续加速仍有Depth风险。",
+      "related": "P03",
+      "related_name": "火花先锋"
+    },
+    {
+      "id": "P12",
+      "name": "干扰信号",
+      "role": "应急",
+      "description": "沿当前合法反制规则压制Boss热量。",
+      "related": "R01",
+      "related_name": "应急偏转"
+    },
+    {
+      "id": "P14",
+      "name": "连锁断路器",
+      "role": "控制",
+      "description": "布置后场，交接时压制Boss热量；触发后消耗。",
+      "related": "P05",
+      "related_name": "炉基座"
+    },
+    {
+      "id": "P17",
+      "name": "紧急泄压",
+      "role": "续航",
+      "description": "沿当前规则抽牌、护盾与降温，不增加棋型来源。",
+      "related": "S03",
+      "related_name": "炉役回收"
+    },
+    {
+      "id": "P18",
+      "name": "终端斩击",
+      "role": "终结",
+      "description": "Heat Route终结分支，须满足当前热量与路线条件。",
+      "related": "P03",
+      "related_name": "火花先锋"
+    }
+  ],
+  "modules": [
+    {
+      "id": "warm",
+      "name": "预热飞轮",
+      "description": "每场启动时热量+2；仍需正常付款，连续出牌仍增加Depth。"
+    },
+    {
+      "id": "armor",
+      "name": "学徒护套",
+      "description": "本远征每场锅炉学徒基础耐久+2；不保护其他棋子。"
+    },
+    {
+      "id": "draw",
+      "name": "补给匣",
+      "description": "每场首回合基础六张之后额外抽一张；只触发一次。"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase104_integrated_engineering_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase108_cooling_command_trial.gd" id="2"]
+[node name="TimingFacilityTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+prepared_blueprints = Array[String](["P13", "P16"])
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "工程册 · 冷却与下一动作"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "此试验先准备冷却设施，再准备围护设施。\n先处理已有卡牌、OD与单位动作，再考虑施工。\n建议保留一个建筑名额给原地基—堡垒路线。\n工程册内可查看并使用已完工设施，仍按原费用与次数。\n冷却会竞争OD热量；已有减免时不用重复准备。"

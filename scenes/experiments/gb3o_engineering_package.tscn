@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb3n_arsenal_lifecycle.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/gb3o_engineering_package.gd" id="2"]
+[node name="EngineeringPackageTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "工程小轴 · 筑城与补给"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "先建炉基座，再让学徒登场。\n测绘付1热：二选一找修补/升高。\n起手建议找升高，选择学徒相邻空地。\n成功工程后，补给附近棋子交战减伤1。\n普通卡牌继续推进，OD保留大招收益。"

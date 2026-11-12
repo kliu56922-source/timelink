@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "starting_hand_size": 6,
+  "max_hand_size": 7,
+  "player_start_hp": 35,
+  "turn_draw_count": 1,
+  "fatigue_base_damage": 1
+}

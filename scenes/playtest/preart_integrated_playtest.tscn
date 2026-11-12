@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase105_timing_facility_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/playtest/preart_integrated_playtest.gd" id="2"]
+[node name="IntegratedPlaytest" instance=ExtResource("1")]
+script = ExtResource("2")
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "阵地与过热 · 整合试玩"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "目标：击败熔炉守卫。先出牌、观察预告，再安排单位行动。\n普通OD需要7热；升格仪式另需8热与实际准备。\n工程册可稳筑/急筑，完工后从工程册使用设施。\n建筑会占用单位的落点，城墙与门沿格边建造。\n先预览费用再确认；灰盒版本仍在调整平衡。"

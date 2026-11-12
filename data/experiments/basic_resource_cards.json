@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "cards": [
+    {"id":"B01","cn_name":"打击","en_name":"Strike","card_type":"SPELL","board_zone":"INSTANT","display_type":"NONE","archetype_role":"EXTENDER","engine_gain":0,"od_cost":0,"load_cost":1,"series_id":"generic","short_description_cn":"支付热量1；选敌方普通棋子，打2","full_description_cn":"支付热量1，对选择的敌方普通棋子造成2伤害。不攻击堡垒核心，不绕过驻军建筑的掩护。同名每回合成功使用一次，不计入普通攻击仪式准备。"},
+    {"id":"B02","cn_name":"赋刃","en_name":"Temper","card_type":"SPELL","board_zone":"INSTANT","display_type":"NONE","archetype_role":"EXTENDER","engine_gain":0,"od_cost":0,"load_cost":1,"series_id":"generic","short_description_cn":"支付热量1；己方下次普通攻击伤害+2","full_description_cn":"支付热量1，选择己方普通棋子。本回合下一次对棋子或堡垒本体的普通攻击伤害+2，成功攻击后消耗；未使用则回合结束失效。不提供额外行动、范围、反击或技能伤害；拆墙耐久步骤不改变，也不消耗此加成。独立于主教赋刃，同名每回合成功使用一次。"},
+    {"id":"B03","cn_name":"护卫","en_name":"Protect","card_type":"SPELL","board_zone":"INSTANT","display_type":"NONE","archetype_role":"EXTENDER","engine_gain":0,"od_cost":0,"load_cost":1,"series_id":"generic","short_description_cn":"支付热量1；己方下次棋子交战减伤2","full_description_cn":"支付热量1，选择己方普通棋子。复用护送防护：下一次普通棋子交战或反击受伤减2，下次己方回合开始过期。与同种护送取较大值，不叠加；不抵挡Boss法术、技能或堡垒伤害。同名每回合成功使用一次。"},
+    {"id":"B04","cn_name":"蓄火","en_name":"Stoke","card_type":"SPELL","board_zone":"INSTANT","display_type":"NONE","archetype_role":"STARTER","engine_gain":0,"od_cost":0,"load_cost":1,"series_id":"generic","short_description_cn":"获得热量2","full_description_cn":"无需选择地块，获得热量2，最多10。同名每回合成功使用一次；满热时不能使用。不额外抽牌、检索或造成伤害。"},
+    {"id":"B05","cn_name":"排压","en_name":"Vent","card_type":"SPELL","board_zone":"INSTANT","display_type":"NONE","archetype_role":"CONTROL","engine_gain":0,"od_cost":0,"load_cost":1,"series_id":"generic","short_description_cn":"支付热量1；Depth降低2","full_description_cn":"无需选择地块，支付热量1，使Depth降低2，最低0。同名每回合成功使用一次；Depth为0或费用不足时保留卡牌。可在透支锁定时使用，不增加仪式的控制准备进度。"}
+  ]
+}

@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" uid="uid://d1bbx4r0y23pw" path="res://scenes/battle/battle_scene.tscn" id="1_base"]
+[ext_resource type="Script" path="res://scenes/experiments/gb1_integrated_battle.gd" id="2_gb1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gb1_help"]
+content_margin_left = 10.0
+content_margin_top = 8.0
+content_margin_right = 10.0
+content_margin_bottom = 8.0
+bg_color = Color(0.043, 0.055, 0.082, 0.78)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.36, 0.47, 0.62, 0.75)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="GB1IntegratedBattle" instance=ExtResource("1_base")]
+script = ExtResource("2_gb1")
+
+[node name="GB1HelpLayer" type="CanvasLayer" parent="."]
+layer = 6
+
+[node name="GB1HelpPanel" type="PanelContainer" parent="GB1HelpLayer"]
+offset_left = 16.0
+offset_top = 64.0
+offset_right = 260.0
+offset_bottom = 188.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gb1_help")
+
+[node name="Body" type="VBoxContainer" parent="GB1HelpLayer/GB1HelpPanel"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 6
+
+[node name="Title" type="Label" parent="GB1HelpLayer/GB1HelpPanel/Body"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.94, 0.82, 0.52, 1)
+theme_override_font_sizes/font_size = 15
+text = "阵地对决 · 整合试玩"
+
+[node name="Description" type="Label" parent="GB1HelpLayer/GB1HelpPanel/Body"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.82, 0.85, 0.9, 1)
+theme_override_font_sizes/font_size = 11
+text = "建立阵地，或集中进攻。观察 Boss 预告，再决定是否花牌防守。目标：击败熔炉守卫。"
+autowrap_mode = 3
+
+[node name="GB1RestartButton" type="Button" parent="GB1HelpLayer/GB1HelpPanel/Body"]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+text = "重新挑战"
+
+[connection signal="pressed" from="GB1HelpLayer/GB1HelpPanel/Body/GB1RestartButton" to="." method="restart_gb1_battle"]

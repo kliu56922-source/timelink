@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase35_early_knight_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase38_od_decision_trial.gd" id="2"]
+[node name="ODDecisionTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "OD取舍 · 联想候选"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "起手：蓄火→学徒→燃芯使魔。\n选牌联想会比较当前OD对象与冷却降热。\n提示只给依据，行动仍由你选择。\n原费用与Depth保留；重开恢复本候选。\n本入口不记录普通战斗胜败统计。"

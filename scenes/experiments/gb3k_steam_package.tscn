@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb3j_build_orientation.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/gb3k_steam_package.gd" id="2"]
+
+[node name="SteamPackageTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "蒸汽战团 · 双轴展开"
+
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "学徒登场 → 调度付热量1找兵力。\n先建炉基座，学徒可额外找中转。\n找来的牌在手中，需正常选格登场。\n同名每回合一次；保留热量用于OD。\n查看参考路线，之后驻军或推进攻城。"

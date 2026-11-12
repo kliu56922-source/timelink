@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase76_partial_hero_growth_trial.tscn" id="1"]
+[node name="FixedHeroGrowthComparison" instance=ExtResource("1")]
+amount_profile = "fixed-five"
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "炉心精炼 · 固定5热对照"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "与部分付费候选同场景，仅锁定5热→5长期点。\n实际升格的A01，在L3/L4每回合一次；正常主动技能指令费用。\n先预览再确认，不立即返还指令。候选平衡待验证。"

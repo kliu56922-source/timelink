@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "p05_foundation": {
+      "card_id": "P05",
+      "allowed_heights": [0, 1],
+      "auto_raise_from_height": 0,
+      "minimum_foundation_height": 1,
+      "core_integrity": 2,
+      "reserved_garrison_slots": 0,
+      "modules": []
+    },
+    "p08_fortification": {
+      "card_id": "P08",
+      "allowed_heights": [1],
+      "auto_raise_from_height": -1,
+      "minimum_foundation_height": 1,
+      "core_integrity": 3,
+      "reserved_garrison_slots": 1,
+      "garrison_slots": [
+        {
+          "slot_id": "garrison_0",
+          "socket_name": "Garrison0",
+          "slot_role": "rampart",
+          "enabled": false
+        }
+      ],
+      "modules": [
+        {"kind": "gatehouse", "relative_edge": "forward", "integrity": 2},
+        {"kind": "wall", "relative_edge": "left", "integrity": 2},
+        {"kind": "wall", "relative_edge": "right", "integrity": 2},
+        {"kind": "wall", "relative_edge": "rear", "integrity": 2}
+      ]
+    },
+    "p13_heat_sink": {
+      "card_id": "P13",
+      "allowed_heights": [0, 1],
+      "auto_raise_from_height": -1,
+      "minimum_foundation_height": 0,
+      "core_integrity": 2,
+      "stabilizes_terrain": true,
+      "reserved_garrison_slots": 0,
+      "modules": []
+    },
+    "p16_containment_wall": {
+      "card_id": "P16",
+      "allowed_heights": [0, 1],
+      "auto_raise_from_height": -1,
+      "minimum_foundation_height": 0,
+      "core_integrity": 2,
+      "stabilizes_terrain": false,
+      "reserved_garrison_slots": 0,
+      "orientation_mode": "selected_edge",
+      "modules": [
+        {"kind": "wall", "relative_edge": "selected", "integrity": 2}
+      ]
+    },
+    "p19_core_cathedral": {
+      "card_id": "P19",
+      "allowed_heights": [1],
+      "auto_raise_from_height": 1,
+      "minimum_foundation_height": 2,
+      "core_integrity": 4,
+      "stabilizes_terrain": false,
+      "reserved_garrison_slots": 0,
+      "requires_replacement": true,
+      "replacement_profile_ids": [
+        "p05_foundation",
+        "p08_fortification"
+      ],
+      "requires_stable_replacement": true,
+      "requires_empty_garrison": true,
+      "modules": []
+    }
+  }
+}

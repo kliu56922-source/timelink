@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "pool": {
+    "player_base_by_od_layer": {
+      "1": 3,
+      "2": 4,
+      "3": 5,
+      "4": 6,
+      "5": 7
+    },
+    "boss_base_by_zone": {
+      "Calm": 3,
+      "Heated": 4,
+      "Overdrive": 5
+    },
+    "total_cap": 9
+  },
+  "costs": {
+    "move": 1,
+    "special_move": 2,
+    "attack": 2,
+    "turn": 1,
+    "defend": 1,
+    "boss_core_attack": 3,
+    "active_skill": {
+      "min": 2,
+      "default": 2,
+      "max": 4
+    },
+    "od_finisher": {
+      "min": 4,
+      "default": 4,
+      "max": 6
+    },
+    "minimum_paid_cost": 1
+  },
+  "depth": {
+    "gross_spend_thresholds": [3, 6, 8],
+    "depth_per_threshold": 1,
+    "warning_skill_surcharge": 1,
+    "backlash_skill_surcharge": 1,
+    "block_instant_refund_during_backlash": true
+  },
+  "refunds": {
+    "default_per_trigger_cap": 1,
+    "total_per_turn_cap": 2
+  },
+  "turn": {
+    "clear_unused_points": true,
+    "normal_gain_applies_next_turn": true
+  }
+}

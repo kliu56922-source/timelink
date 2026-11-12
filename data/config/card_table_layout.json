@@ -1,0 +1,27 @@
+{
+  "version": "1.2",
+  "description": "Phase 18A — wider BattleTable, tighter RightTrack, centered hand area",
+  "resolution": {"w": 1600, "h": 900},
+  "battle_table": {"x": 100, "y": 50, "w": 1300, "h": 620},
+  "detail_panel": {
+    "w": 220, "h": 400,
+    "expanded_w": 300, "expanded_h": 520
+  },
+  "right_track": {"x": 1404, "y": 50, "w": 146, "h": 620},
+  "core_status_panel": {"x": 1010, "y": 4, "w": 280, "h": 196},
+  "hand_area": {"x": 200, "y": 680, "w": 1180, "h": 210},
+  "player_front_row": {"x": 110, "y": 388, "w": 1260, "h": 134},
+  "player_back_row": {"x": 110, "y": 542, "w": 1260, "h": 110},
+  "boss_front_row": {"x": 110, "y": 222, "w": 1260, "h": 126},
+  "boss_back_row": {"x": 110, "y": 118, "w": 1260, "h": 88},
+  "front_slot_size": {"w": 140, "h": 106},
+  "back_slot_size": {"w": 132, "h": 86},
+  "slot_gap": 16,
+  "hand_card_size": {"w": 152, "h": 192},
+  "field_card_size": {"w": 136, "h": 96},
+  "detail_card_size": {"w": 180, "h": 240},
+  "feed_card_size": {"w": 100, "h": 64},
+  "hand_fan_angle": 4.0,
+  "hand_spacing_min": 72.0,
+  "hand_spacing_preferred": 130.0
+}

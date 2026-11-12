@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "readiness_threshold": 8,
+  "release_heat_cost": 5,
+  "converted_heat": 5,
+  "piece_releases": {
+    "pawn": {
+      "resolver_id": "pawn_formation_advance",
+      "action_kind": "move",
+      "command_id": "move",
+      "command_cost": 1,
+      "chain_event": "od_release:pawn"
+    },
+    "knight": {
+      "resolver_id": "knight_arc_leap",
+      "action_kind": "attack",
+      "command_id": "attack",
+      "command_cost": 2,
+      "chain_event": "od_release:knight"
+    },
+    "bishop": {
+      "resolver_id": "bishop_diagonal_conduction",
+      "action_kind": "attack",
+      "command_id": "attack",
+      "command_cost": 2,
+      "chain_event": "od_release:bishop"
+    },
+    "rook": {
+      "resolver_id": "rook_orthogonal_relay",
+      "action_kind": "control",
+      "command_id": "defend",
+      "command_cost": 1,
+      "chain_event": "od_release:rook"
+    }
+  },
+  "final_convergence": {
+    "minimum_layer": 4,
+    "minimum_heat": 8,
+    "required_boss_phase": 3,
+    "requires_qualifying_chain": true,
+    "boss_damage": 5,
+    "resolver_id": "final_convergence"
+  }
+}

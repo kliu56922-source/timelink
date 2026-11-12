@@ -1,0 +1,129 @@
+{
+  "version": 2,
+  "monster_attack": {
+    "target_lock": 0.12,
+    "telegraph": 0.24,
+    "lunge": 0.22,
+    "hit_pause": 0.12,
+    "reaction": 0.18,
+    "return": 0.28,
+    "destroy": 0.34,
+    "lunge_distance": 0.35
+  },
+  "spell_activation": {
+    "hand_charge": 0.35,
+    "stage_travel": 0.30,
+    "stage_hold": 0.70,
+    "resolve_hold": 0.45,
+    "graveyard_travel": 0.35,
+    "finisher_extra_hold": 0.20
+  },
+  "ascension": {
+    "charge": 0.20,
+    "swap_out": 0.18,
+    "swap_in": 0.28,
+    "settle": 0.18
+  },
+  "orchestration": {
+    "phase_order": ["select", "commit", "convey", "resolve"],
+    "lanes": ["engine_lane", "board_lane", "card_lane", "audio_lane"],
+    "micro_duration": 0.20,
+    "minor_duration": 0.55,
+    "major_duration": 1.15,
+    "major_hard_timeout": 1.40,
+    "coalescing_window": 0.04,
+    "fast_mode_multiplier": 0.65,
+    "auto_fast_queue_threshold": 4,
+    "auto_fast_multiplier": 0.55,
+    "reduced_motion_duration_multiplier": 0.50
+  },
+  "od_release_choreography": {
+    "commit_end": 0.10,
+    "extract_end": 0.38,
+    "conduit_end": 0.62,
+    "sigil_end": 0.85,
+    "impact_end": 1.05,
+    "settle_end": 1.20,
+    "board_dim_alpha": 0.18
+  },
+  "monster_summon": {
+    "card_commit_end": 0.10,
+    "travel_end": 0.30,
+    "token_land_end": 0.46,
+    "settle_end": 0.55,
+    "spawn_ring_scale": 1.18
+  },
+  "result_feedback": {
+    "damage_badge_duration": 0.55,
+    "blocked_badge_duration": 0.45,
+    "status_badge_duration": 0.65,
+    "float_distance": 36.0,
+    "impact_scale": 1.12
+  },
+  "piece_sigils": {
+    "pawn": "forward_fan",
+    "knight": "knight_l",
+    "bishop": "diagonal_cross",
+    "rook": "orthogonal_cross"
+  },
+  "audio_cues": {
+    "od_release_commit": "od_release_commit",
+    "od_release_extract": "od_release_extract",
+    "od_release_impact": "od_release_impact",
+    "spell_commit": "spell_commit",
+    "spell_resolve": "spell_resolve",
+    "monster_summon": "monster_summon",
+    "monster_attack": "monster_attack",
+    "monster_skill": "monster_skill",
+    "building_commit": "building_commit",
+    "counter_trigger": "counter_trigger"
+  },
+  "accessibility": {
+    "reduced_motion_default": false,
+    "fast_mode_default": false,
+    "reduced_motion_shake_scale": 0.0
+  },
+  "world_visual_language": {
+    "materials": ["dark_iron", "weathered_stone", "oxidized_bronze", "dark_wood", "jade", "crystal"],
+    "function_colors": {
+      "calm": "#5A8FB8",
+      "heated": "#C8A24B",
+      "overdrive": "#D8432A",
+      "finisher": "#D9B55A",
+      "control": "#3FAE93",
+      "depth": "#4B355E"
+    },
+    "crystal_reveal_ratio": {
+      "idle": 0.05,
+      "cast": 0.20,
+      "od_layer": 0.40,
+      "finisher": 0.60
+    }
+  },
+  "card_direction_profiles": {
+    "P06": {
+      "template": "bishop_blade",
+      "accent": "heated",
+      "commit_motif": "royal_seal",
+      "convey_motif": "diagonal_blade",
+      "resolve_motif": "bishop_mark",
+      "reveal_level": "cast"
+    },
+    "P08": {
+      "template": "rook_relay",
+      "accent": "control",
+      "commit_motif": "foundation_shadow",
+      "convey_motif": "orthogonal_oath",
+      "resolve_motif": "beacon_lock",
+      "reveal_level": "cast"
+    },
+    "P20": {
+      "template": "kingfire_finisher",
+      "accent": "finisher",
+      "commit_motif": "crown_seal",
+      "convey_motif": "tomb_gate",
+      "resolve_motif": "kingfire_sweep",
+      "reveal_level": "finisher"
+    }
+  }
+}

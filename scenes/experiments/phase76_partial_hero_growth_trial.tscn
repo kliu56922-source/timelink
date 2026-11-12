@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase73_paid_hero_growth_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase76_partial_hero_growth_trial.gd" id="2"]
+[node name="PartialHeroGrowthTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+amount_profile = "partial"
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "炉心精炼 · 部分付费候选"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "实际升格的A01，在L3/L4每回合可精炼一次。\n选择1—5热，支付正常主动技能指令费用，以1:1转换长期点。\n先预览再确认；留下的热量可供补给，不免费增加资源。\n延续下一回合兑余烬，普通OD与仪式门槛保持。候选平衡待验证。"

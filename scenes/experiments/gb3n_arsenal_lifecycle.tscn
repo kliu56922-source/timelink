@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb3k_steam_package.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/gb3n_arsenal_lifecycle.gd" id="2"]
+[node name="ArsenalLifecycleTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "蒸汽战团 · 守卫与合体"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "P15入场护盾+5，守卫保护核心。\n先使用中级武库，准备P07/P10。\nL5或Burst：两素材＋3HP合体7/6。\n保留所选格；新单位本回合不能攻击。\n拆场可用S03回收素材，继续用卡牌攻城。"

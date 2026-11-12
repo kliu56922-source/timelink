@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "enabled": false,
+  "profiles": {
+    "normal_structure_attack": {"structure_steps": 1, "max_manhattan": 1, "max_height_delta": 1},
+    "bishop_breach": {"structure_steps": 2, "requires_enchant": true, "overflow": false},
+    "p18_wall_pierce": {"hp_per_integrity": 4, "secondary_policy": "active_garrison_else_core", "max_secondary_targets": 1},
+    "boss_b07_breach": {"actor_card_id": "B-07", "max_pending": 1, "target_kind": "structure_module", "requires_full_player_window": true}
+  }
+}

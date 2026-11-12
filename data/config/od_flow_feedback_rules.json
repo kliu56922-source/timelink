@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "event_buffer_capacity": 256,
+  "saturation": {
+    "enabled": false,
+    "repeat_penalty": [0, 1, 2]
+  },
+  "policies": [
+    "saturable",
+    "bounded_existing",
+    "unsaturated_pressure",
+    "conversion",
+    "cooling"
+  ],
+  "card_base_heat_families": {
+    "P01": "ignition_cards",
+    "P02": "ignition_cards",
+    "P03": "ignition_cards",
+    "P05": "ignition_cards",
+    "P06": "conduction_cards",
+    "P07": "conduction_cards",
+    "P08": "conduction_cards",
+    "P09": "conduction_cards",
+    "P10": "conduction_cards",
+    "P15": "fortification_cards",
+    "P19": "convergence_cards"
+  },
+  "system_sources": [
+    {"source_kind": "bonus", "source_id": "basic_supply:fuel", "source_family": "basic_supply", "source_policy": "bounded_existing", "presentation_tier": "minor"},
+    {"source_kind": "payment", "source_id": "basic_supply:vent", "source_family": "basic_supply", "source_policy": "bounded_existing", "presentation_tier": "minor"},
+    {"source_kind": "payment", "source_id": "basic_supply:target", "source_family": "basic_supply", "source_policy": "bounded_existing", "presentation_tier": "minor"},
+    {"source_kind": "payment", "source_id": "steam_recovery:payment", "source_family": "steam_payment", "source_policy": "bounded_existing", "presentation_tier": "minor"},
+    {"source_kind": "payment", "source_id": "steam_dispatch:payment", "source_family": "steam_payment", "source_policy": "bounded_existing", "presentation_tier": "minor"},
+    {"source_kind": "keyword", "source_id": "keyword:overload", "source_family": "keyword_overload", "source_policy": "saturable", "presentation_tier": "minor"},
+    {"source_kind": "bonus", "source_id": "bonus:P02:spark_ignition", "source_family": "zone_card_bonus", "source_policy": "saturable", "presentation_tier": "minor"},
+    {"source_kind": "bonus", "source_id": "bonus:P08:pressure_loop", "source_family": "zone_card_bonus", "source_policy": "saturable", "presentation_tier": "minor"},
+    {"source_kind": "stable_combat", "source_id": "stable_combat:unit_damage", "source_family": "stable_combat", "source_policy": "bounded_existing", "presentation_tier": "micro"},
+    {"source_kind": "stable_combat", "source_id": "stable_combat:enemy_destroyed", "source_family": "stable_combat", "source_policy": "bounded_existing", "presentation_tier": "minor"},
+    {"source_kind": "stable_combat", "source_id": "stable_combat:boss_core_damage_comeback", "source_family": "core_comeback", "source_policy": "bounded_existing", "presentation_tier": "minor"},
+    {"source_kind": "pressure", "source_id": "pressure:overload_penalty", "source_family": "pressure_overload", "source_policy": "unsaturated_pressure", "presentation_tier": "major"},
+    {"source_kind": "buff", "source_id": "buff:od_gain", "source_family": "buff_heat", "source_policy": "saturable", "presentation_tier": "micro"},
+    {"source_kind": "od_release", "source_id": "od_release:pawn", "source_family": "od_release", "source_policy": "conversion", "presentation_tier": "major"},
+    {"source_kind": "od_release", "source_id": "od_release:knight", "source_family": "od_release", "source_policy": "conversion", "presentation_tier": "major"},
+    {"source_kind": "od_release", "source_id": "od_release:bishop", "source_family": "od_release", "source_policy": "conversion", "presentation_tier": "major"},
+    {"source_kind": "od_release", "source_id": "od_release:rook", "source_family": "od_release", "source_policy": "conversion", "presentation_tier": "major"}
+  ],
+  "dynamic_source_rules": {
+    "hero_skill": {
+      "prefix": "hero_skill:",
+      "source_family": "hero_skill",
+      "source_policy": "saturable",
+      "presentation_tier": "minor"
+    }
+  },
+  "event_tiers": {
+    "heat_committed": "micro",
+    "heat_cooled": "minor",
+    "zone_changed": "major",
+    "release_started": "major",
+    "heat_converted": "major",
+    "layer_advanced": "major",
+    "release_committed": "major",
+    "release_cancelled": "minor"
+  },
+  "coalescing": {
+    "key_format": "{event_kind}|{source_family}"
+  }
+}

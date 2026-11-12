@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase38_od_decision_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase47_prepared_payoff_trial.gd" id="2"]
+[node name="OriginalPayoffTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+ritual_payoff_profile = "original"
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "准备仪式 · 原收益对照"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "沿用原仪式收益：伤害先受Boss护盾吸收，再清盾。\n准备与应急模式、每局一次、热费和Depth均保持。\n同一早P02牌序、原普通OD与冷却。\n用于与核心穿盾试验对照；重开保留原档。"

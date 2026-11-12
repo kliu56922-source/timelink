@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "cards": [
+    {
+      "id": "E01",
+      "cn_name": "攻城测绘",
+      "en_name": "Siege Survey",
+      "card_type": "SPELL",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "archetype_role": "EXTENDER",
+      "od_cost": 1,
+      "engine_gain": 0,
+      "load_cost": 1,
+      "series_id": "engineering_support",
+      "search_tags": [
+        "engineering"
+      ],
+      "short_description_cn": "费用1热。控制完好己方建筑，选择找修补或升高。",
+      "full_description_cn": "控制一处完好的己方建筑，支付1热：从牌库选择「铸城修补」或「地脉隆起」加入手牌。只显示牌库中存在的选择；同名每回合一次。"
+    },
+    {
+      "id": "E02",
+      "cn_name": "前沿补给",
+      "en_name": "Frontline Supply",
+      "card_type": "SPELL",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "archetype_role": "EXTENDER",
+      "od_cost": 1,
+      "engine_gain": 0,
+      "load_cost": 1,
+      "series_id": "engineering_support",
+      "search_tags": [
+        "engineering"
+      ],
+      "short_description_cn": "费用0热。本回合成功修补/升高后，附近棋子交战减伤1。",
+      "full_description_cn": "本回合成功修补或升高后，选择工程格或相邻八格的一名己方普通棋子（含驻军，武库除外）：下一次棋子交战减伤1，至下次己方回合开始到期。与护送取较大值，不叠加；不挡Boss法术。移动随实体，离场消失。同名每回合一次。"
+    }
+  ]
+}

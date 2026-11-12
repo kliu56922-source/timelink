@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase101_construction_site_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase102_edge_fortification_trial.gd" id="2"]
+[node name="EdgeFortificationTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "工程册 · 格边墙门"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "基础城防按钮可沿格边建墙或门，不占格子。\n墙2指令、门3指令，与工程册共用一次施工。\n先生成1耐久工地，下个己方回合存活则完工为3耐久。\n门只为友军移动放行，改建付1指令并保留损伤。\n墙保护后方单位；不会把任意核心伤害转为全局护盾。"

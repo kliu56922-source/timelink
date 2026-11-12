@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "cards": [
+    {
+      "id": "P23",
+      "cn_name": "地脉隆起",
+      "en_name": "Leyline Uplift",
+      "card_type": "SPELL",
+      "archetype_role": "STARTER",
+      "rarity": "COMMON",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "engine_gain": 1,
+      "route_id": "heat_route",
+      "route_step": 1,
+      "next_cards": [
+        "Ignite Blade",
+        "Heat Channeler"
+      ],
+      "effect_ids": [
+        "terrain_raise"
+      ],
+      "effect_values": {
+        "terrain_raise": 1
+      },
+      "short_description_cn": "己方合法地块高度 +1，最高 H2；达到支撑高度时恢复地基。",
+      "full_description_cn": "升高己方建设区空地或己方结构地块，不能抬高裸露单位所在格。重复效果锁定同一格，H2 封顶；不修复墙体或单位。",
+      "layer_1_2_text": "地块高度 +1，最高 H2。",
+      "layer_3_4_text": "地块高度 +1，最高 H2。",
+      "layer_5_text": "地块高度 +1，最高 H2。",
+      "art_key": "greybox_raise"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "cards": [
+    {
+      "id": "P22",
+      "cn_name": "铸城修补",
+      "en_name": "Rampart Repair",
+      "card_type": "SPELL",
+      "archetype_role": "CONTROL",
+      "rarity": "COMMON",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "engine_gain": 0,
+      "route_id": "control_route",
+      "route_step": 2,
+      "next_cards": [
+        "Chain Breaker"
+      ],
+      "effect_ids": [
+        "structure_repair"
+      ],
+      "effect_values": {
+        "structure_repair": 1
+      },
+      "short_description_cn": "修复己方一段存活受损墙体或门楼：耐久+1。不能恢复地基。",
+      "full_description_cn": "选择己方仍存活结构的一段受损墙体或门楼，恢复1点耐久，上限为原最大值。不能修复已毁构件、核心或单位，也不恢复地基或延长失基窗口。",
+      "layer_1_2_text": "修复1点构件耐久。",
+      "layer_3_4_text": "修复1点构件耐久。",
+      "layer_5_text": "修复1点构件耐久。",
+      "art_key": "greybox_repair"
+    }
+  ]
+}

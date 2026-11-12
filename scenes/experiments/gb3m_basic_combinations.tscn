@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb3l_basic_resources.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/gb3m_basic_combinations.gd" id="2"]
+[node name="BasicCombinationsTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "基础牌 · 场面组合试制"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "蓄火获得2热：立即使用或保留给OD。\n打击选敌方棋子；赋刃、护卫选己方棋子。\n点击或拖到绿色棋子标记，预览后确认。\n召唤病、指令与共享行动依旧生效。\n先解决场面，再衔接战团、建筑和攻城。"

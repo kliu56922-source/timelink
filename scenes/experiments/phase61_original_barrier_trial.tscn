@@ -1,0 +1,6 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase52_first_refund_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase61_ascension_barrier_trial.gd" id="2"]
+[node name="OriginalAscensionBarrierTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+ascension_barrier_profile = "original"

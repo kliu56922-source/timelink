@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase73_paid_hero_growth_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase73_paid_hero_growth_trial.gd" id="2"]
+[node name="OriginalGrowthTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+growth_profile = "original"
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "炉心精炼 · 原规则对照"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "此对照保留下一玩家窗口兑余烬、普通OD7热及仪式8热。\n未开启炉心精炼，左侧没有精炼入口。\n原有热量、指令支付与长期成长路径保持。"

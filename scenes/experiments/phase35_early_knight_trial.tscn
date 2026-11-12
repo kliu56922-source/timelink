@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb3m_basic_combinations.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase35_early_knight_trial.gd" id="2"]
+[node name="EarlyKnightTimingTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "OD来源提前 · 牌序候选"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "马型来源进入起手：蓄火→学徒→燃芯使魔。\n保留召唤病、共享指令、热量与Depth。\n候选未替换普通关；重开恢复候选牌序。\n本入口不记录普通战斗胜败统计。"

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "description": "Phase 27E — Monster Hero Skills for P02, P07, P15",
+  "skills": [
+    {
+      "card_id": "P02",
+      "cn_name": "燃芯使魔",
+      "passive": {
+        "id": "ember_cadence",
+        "name": "余烬步频",
+        "max_stacks": 2,
+        "trigger": "normal_move_completed",
+        "description": "每次完成普通合法移动获得1层余烬"
+      },
+      "active": {
+        "id": "ignition_leap",
+        "name": "点火跃迁",
+        "command_type": "active_skill",
+        "base_cost": 2,
+        "target_mode": "cell",
+        "resolver_id": "resolve_ignition_leap",
+        "description": "跃迁到目标格，消耗余烬获得ATK+OD强化"
+      }
+    },
+    {
+      "card_id": "P07",
+      "cn_name": "热流导体",
+      "passive": {
+        "id": "thermal_pressure",
+        "name": "热流蓄压",
+        "max_stacks": 3,
+        "trigger": "player_od_gained",
+        "description": "玩家实际获得OD时获得1层热流"
+      },
+      "active": {
+        "id": "stream_cannon",
+        "name": "贯流轰击",
+        "command_type": "active_skill",
+        "base_cost": 3,
+        "target_mode": "enemy_unit_or_boss_core",
+        "resolver_id": "resolve_stream_cannon",
+        "description": "对目标发动攻击，消耗所有热流追加伤害"
+      }
+    },
+    {
+      "card_id": "P15",
+      "cn_name": "热压壁垒兽",
+      "passive": {
+        "id": "pressure_reserve",
+        "name": "压力储备",
+        "max_stacks": 2,
+        "trigger": "monster_combat_damage_received",
+        "description": "自身或邻接友军受到正数战斗伤害时获得1层压力"
+      },
+      "active": {
+        "id": "bulwark_advance",
+        "name": "壁垒推进",
+        "command_type": "active_skill",
+        "base_cost": 2,
+        "target_mode": "cell_or_self",
+        "resolver_id": "resolve_bulwark_advance",
+        "description": "移动到目标格或原地防守，消耗压力获得Shield"
+      }
+    },
+    {
+      "card_id": "P03",
+      "cn_name": "火花先锋",
+      "passive": {
+        "id": "vanguard_momentum",
+        "name": "先锋动能",
+        "max_stacks": 2,
+        "trigger": "normal_move_completed",
+        "description": "每次完成普通合法移动获得1层先锋动能"
+      },
+      "active": {
+        "id": "spark_assault",
+        "name": "火花突击",
+        "command_type": "active_skill",
+        "base_cost": 2,
+        "target_mode": "enemy_unit_or_boss_core",
+        "resolver_id": "resolve_spark_assault",
+        "min_stacks": 1,
+        "description": "消耗全部先锋动能对目标发动技能攻击，每层消耗增加伤害"
+      }
+    },
+    {
+      "card_id": "P10",
+      "cn_name": "连锁导体",
+      "passive": {
+        "id": "conductor_charge",
+        "name": "链路充能",
+        "max_stacks": 2,
+        "trigger": "player_od_gained",
+        "description": "玩家实际获得OD时获得1层链路充能"
+      },
+      "active": {
+        "id": "chain_relay",
+        "name": "链路转接",
+        "command_type": "active_skill",
+        "base_cost": 2,
+        "target_mode": "cell_or_self",
+        "resolver_id": "resolve_chain_relay",
+        "min_stacks": 1,
+        "description": "移动到目标格或原地，消耗链路充能强化自身和邻接友军"
+      }
+    }
+  ]
+}

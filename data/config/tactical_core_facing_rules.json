@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "core": {
+    "player_target_virtual_rank": -1,
+    "boss_target_virtual_rank": 5,
+    "player_breach_rank": 0,
+    "boss_breach_rank": 4,
+    "player_threat_rank": 1,
+    "boss_threat_rank": 3,
+    "core_spans_all_columns": true,
+    "legacy_lane_fallback_enabled": false,
+    "guard_intercept_column_radius": 1
+  },
+  "facing": {
+    "player_default_rank_delta": -1,
+    "boss_default_rank_delta": 1,
+    "turn_action_cost": 1,
+    "turn_blocked_by_summoning_sickness": true,
+    "redeploy_resets_to_side_default": true
+  },
+  "engagement": {
+    "enabled": true,
+    "locks_self_move": false,
+    "forced_effect_ignores_lock": true
+  },
+  "overdrive_breach": {
+    "enabled": true,
+    "charge_cost": 3,
+    "depth_gain": 1,
+    "once_per_turn": true
+  }
+}

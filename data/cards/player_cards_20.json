@@ -1,0 +1,1462 @@
+{
+  "version": "5D-v3",
+  "cards": [
+    {
+      "id": "P01",
+      "cn_name": "预热仪式",
+      "en_name": "Warm-Up Rite",
+      "card_type": "SPELL",
+      "archetype_role": "STARTER",
+      "rarity": "COMMON",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "heat_route",
+      "route_step": 1,
+      "next_cards": [
+        "Ignite Blade",
+        "Heat Channeler"
+      ],
+      "keywords": [
+        "overload"
+      ],
+      "tags": [
+        "starter",
+        "od_gain",
+        "draw"
+      ],
+      "effect_ids": [
+        "draw",
+        "self_od"
+      ],
+      "effect_values": {
+        "draw": 1,
+        "self_od": 1
+      },
+      "calm_text": "基础：抽1张，自身OD+1。",
+      "heated_text": "追加：使1只友方怪兽+1 ATK。",
+      "overdrive_text": "追加：下一张怪兽Load -1；Depth +1。",
+      "short_description_cn": "抽1，OD+1。",
+      "full_description_cn": "抽1张，自身OD+1。L3+：场上有建筑则建筑充能+1，无建筑则护盾+1。L5/Burst：额外护盾+2。Heated：再使1只友方怪兽+1 ATK。",
+      "flavor_text_cn": "预热不是浪费时间，是积蓄力量。",
+      "piece_type": "pawn",
+      "piece_enabled": true,
+      "piece_effect_profile_id": "pawn_anchor_fan",
+      "piece_payload_id": "p01_formation_shield",
+      "art_key": "ritual_preheat",
+      "art_prompt_hint_cn": "黑铁圣堂中的蓝色预热仪式，蒸汽阀门微亮。",
+      "legacy_names": [
+        "Warm Up"
+      ],
+      "series_id": "generic",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "starter",
+        "draw",
+        "od_gain"
+      ],
+      "related_cards": [],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 1,
+      "layer_1_2_text": "点火/稳压：安全抽牌启动，积攒初始OD。",
+      "layer_3_4_text": "增压/过热：场上有建筑则建筑充能+1，无建筑则护盾+1。",
+      "layer_5_text": "爆发：额外护盾+2，通用润滑最大化。"
+    },
+    {
+      "id": "P02",
+      "cn_name": "燃芯使魔",
+      "en_name": "Ember Familiar",
+      "card_type": "MONSTER",
+      "archetype_role": "STARTER",
+      "rarity": "COMMON",
+      "board_zone": "FRONT_ROW",
+      "display_type": "UNIT",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 2,
+      "unit_defense": 2,
+      "route_id": "heat_route",
+      "route_step": 1,
+      "next_cards": [
+        "Ignite Blade",
+        "Heat Channeler"
+      ],
+      "keywords": [
+        "overload"
+      ],
+      "tags": [
+        "starter",
+        "od_gain",
+        "front_row"
+      ],
+      "effect_ids": [
+        "self_od"
+      ],
+      "effect_values": {
+        "self_od": 1
+      },
+      "calm_text": "基础：入场自身OD+1。",
+      "heated_text": "追加：本体+1 ATK。",
+      "overdrive_text": "建筑共鸣：若控制建筑，护盾+1。",
+      "short_description_cn": "前场小怪，OD启动。",
+      "full_description_cn": "前场怪兽，入场自身OD+1。检索1张炉心圣堂轴建筑。L3+：检索成功护盾+1。L5/Burst：检索成功护盾+2。",
+      "flavor_text_cn": "一粒火花足以点燃整个反应堆。",
+      "piece_type": "knight",
+      "piece_enabled": true,
+      "piece_effect_profile_id": "knight_unit",
+      "piece_payload_id": "p02_knight_action",
+      "art_key": "ember_familiar",
+      "art_prompt_hint_cn": "小型机械使魔蹲伏在黑铁炉台上，胸口微型炉心发出蓝橙光。",
+      "legacy_names": [
+        "Spark Ignition"
+      ],
+      "series_id": "core_cathedral",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "core",
+        "monster",
+        "starter",
+        "od_gain"
+      ],
+      "related_cards": [
+        "Reactor Foundation",
+        "Pressure Relay"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "tutor_enabled": true,
+      "tutor_timing": "on_play",
+      "tutor_series_id": "core_cathedral",
+      "tutor_card_type": "BUILD",
+      "tutor_tag": "building",
+      "tutor_count": 1,
+      "tutor_text_cn": "入场时，从牌库检索1张炉心圣堂轴建筑加入手牌。",
+      "engine_gain": 1,
+      "layer_1_2_text": "点火/稳压：低风险入场，检索炉心圣堂轴建筑，启动小轴。",
+      "layer_3_4_text": "增压/过热：检索成功后额外护盾+1，保护场面。",
+      "layer_5_text": "爆发：检索成功后护盾+2，Burst窗口下强力启动。"
+    },
+    {
+      "id": "P03",
+      "cn_name": "火花先锋",
+      "en_name": "Spark Vanguard",
+      "card_type": "MONSTER",
+      "archetype_role": "STARTER",
+      "rarity": "COMMON",
+      "board_zone": "FRONT_ROW",
+      "display_type": "UNIT",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 2,
+      "unit_defense": 2,
+      "route_id": "overdrive_route",
+      "route_step": 1,
+      "next_cards": [
+        "Overclock Pulse"
+      ],
+      "keywords": [],
+      "tags": [
+        "starter",
+        "damage",
+        "front_row"
+      ],
+      "effect_ids": [
+        "damage"
+      ],
+      "effect_values": {
+        "damage": 2
+      },
+      "calm_text": "基础：入场造成2点伤害。",
+      "heated_text": "追加：伤害+1。",
+      "overdrive_text": "追加：ATK +1；Depth +1。",
+      "short_description_cn": "入场打2，Heated突击。",
+      "full_description_cn": "前场怪兽，入场造成2点伤害。L3+：本体ATK+1。L5/Burst：额外DEF+1。Heated/Overdrive：伤害+1。",
+      "flavor_text_cn": "燃烧自己，照亮战场。",
+      "piece_type": "pawn",
+      "piece_enabled": true,
+      "piece_effect_profile_id": "pawn_unit",
+      "piece_payload_id": "p03_vanguard_formation",
+      "art_key": "spark_vanguard",
+      "art_prompt_hint_cn": "持热刃的轻装先锋，盔甲管线刚被点燃，橙焰从剑刃升起。",
+      "legacy_names": [
+        "Blazing Soldier"
+      ],
+      "series_id": "core_cathedral",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "core",
+        "monster",
+        "starter",
+        "damage"
+      ],
+      "related_cards": [
+        "Overclock Pulse"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 1,
+      "layer_1_2_text": "点火/稳压：入场打2，早期场面压力。",
+      "layer_3_4_text": "增压/过热：本体ATK+1，场面价值提升。",
+      "layer_5_text": "爆发：额外DEF+1，攻防兼备的突击怪兽。"
+    },
+    {
+      "id": "P04",
+      "cn_name": "断频伏线",
+      "en_name": "Signal Tripwire",
+      "card_type": "COUNTER",
+      "archetype_role": "STARTER",
+      "rarity": "COMMON",
+      "board_zone": "BACK_ROW",
+      "display_type": "TRAP",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "control_route",
+      "route_step": 1,
+      "next_cards": [
+        "Jam Signal",
+        "Cooldown"
+      ],
+      "keywords": [
+        "jam"
+      ],
+      "tags": [
+        "starter",
+        "control",
+        "counter"
+      ],
+      "effect_ids": [
+        "self_od",
+        "enemy_od"
+      ],
+      "effect_values": {
+        "self_od": 1,
+        "enemy_od": -2
+      },
+      "calm_text": "基础：Boss OD增长时阻断-2，自身OD+1。",
+      "heated_text": "追加：护盾+2。",
+      "overdrive_text": "建筑共鸣：若控制建筑，抽1张。",
+      "short_description_cn": "阻断Boss OD增长。",
+      "full_description_cn": "反制。Boss OD增长时触发：Boss OD -2，自身OD+1。L3+：触发后护盾+1。L5/Burst：Boss OD额外-1。Control Route起点。",
+      "flavor_text_cn": "方向比速度更重要。",
+      "piece_type": "pawn",
+      "piece_enabled": true,
+      "piece_effect_profile_id": "pawn_counter_watch",
+      "piece_payload_id": "p04_tripwire_watch",
+      "art_key": "signal_tripwire",
+      "art_prompt_hint_cn": "地面暗线和悬空信号节点，红色Boss能量被青绿色干扰波切断。",
+      "legacy_names": [
+        "Route Spark"
+      ],
+      "series_id": "core_cathedral",
+      "secondary_series_ids": [
+        "abyss_containment"
+      ],
+      "search_tags": [
+        "core",
+        "counter",
+        "starter",
+        "jam"
+      ],
+      "related_cards": [
+        "Jam Signal",
+        "Cooldown"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 0,
+      "layer_1_2_text": "点火/稳压：后场阻断Boss OD，自身OD+1。",
+      "layer_3_4_text": "增压/过热：触发后额外护盾+1，保护场面。",
+      "layer_5_text": "爆发：触发后Boss OD额外-1，压制Boss爆发窗口。"
+    },
+    {
+      "id": "P05",
+      "cn_name": "炉基座",
+      "en_name": "Reactor Foundation",
+      "card_type": "BUILD",
+      "archetype_role": "STARTER",
+      "rarity": "COMMON",
+      "board_zone": "BACK_ROW",
+      "display_type": "SUSTAIN",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "control_route",
+      "route_step": 1,
+      "next_cards": [
+        "Heat Sink",
+        "Cooldown"
+      ],
+      "keywords": [],
+      "tags": [
+        "starter",
+        "building",
+        "control"
+      ],
+      "effect_ids": [
+        "self_od",
+        "shield"
+      ],
+      "effect_values": {
+        "self_od": 1,
+        "shield": 3
+      },
+      "calm_text": "基础：入场OD+1，护盾+2；防止首次Depth增加。",
+      "heated_text": "解锁：消耗OD/充能强化怪兽+1/+1。",
+      "overdrive_text": "追加：1只休眠怪兽保持行动；OD接口费用-1。",
+      "short_description_cn": "入场蓄势与防护；主动强化前场或准备Depth减免。",
+      "full_description_cn": "基础入场：热量+1、护盾+3。主动每回合一次：优先消耗2充能，否则2 OD，强化最先登场的前场棋子+1/+1。无前场棋子时：1 OD准备下次Depth增长减免1。",
+      "od_interface_text": "每回合一次：2充能（优先）或2 OD → 最先登场的前场棋子+1/+1；无前场时1 OD → 准备下次Depth增长减免1。",
+      "building_charge_text": "获得正热量时充能+1，上限4。",
+      "building_resonance_text": "前期过渡建筑：T1-T2低成本启动，帮助铺场和控制Depth初压。",
+      "flavor_text_cn": "信号不止于传递——它本身就是力量。",
+      "piece_type": "pawn",
+      "piece_enabled": true,
+      "piece_effect_profile_id": "pawn_building_aura",
+      "piece_payload_id": "p05_foundation_guard",
+      "art_key": "reactor_foundation",
+      "art_prompt_hint_cn": "半埋在深渊裂隙边缘的蒸汽炉基，蓝色刻度环和铜制压力表缓慢转动。",
+      "legacy_names": [
+        "Signal Relay"
+      ],
+      "series_id": "core_cathedral",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "core",
+        "building",
+        "starter"
+      ],
+      "related_cards": [
+        "Pressure Relay",
+        "Core Cathedral"
+      ],
+      "building_tier": 0,
+      "building_unique": true,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "tutor_enabled": true,
+      "tutor_timing": "on_building_activate",
+      "tutor_series_id": "core_cathedral",
+      "tutor_card_type": "SPELL",
+      "tutor_tag": "extender",
+      "tutor_count": 1,
+      "tutor_text_cn": "主动发动成功后，从牌库检索1张炉心圣堂轴延展魔法加入手牌。",
+      "engine_gain": 1,
+      "layer_1_2_text": "主动接口每回合一次，费用与收益见发动预览。",
+      "layer_3_4_text": "主动接口每回合一次，费用与收益见发动预览。",
+      "layer_5_text": "主动接口每回合一次，费用与收益见发动预览。",
+      "shield": 2
+    },
+    {
+      "id": "P06",
+      "cn_name": "斜锋赋刃",
+      "en_name": "Ignite Blade",
+      "card_type": "SPELL",
+      "archetype_role": "EXTENDER",
+      "rarity": "COMMON",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "heat_route",
+      "route_step": 2,
+      "next_cards": [
+        "Pressure Relay",
+        "Final Slash"
+      ],
+      "keywords": [],
+      "tags": [
+        "extender",
+        "damage",
+        "heat_route"
+      ],
+      "effect_ids": [
+        "damage"
+      ],
+      "effect_values": {
+        "damage": 4
+      },
+      "calm_text": "基础：造成4点伤害，有怪兽则+1。",
+      "heated_text": "追加：1只友方怪兽+2 ATK。",
+      "overdrive_text": "OD接口：消耗2 OD，再触发一次强化。",
+      "piece_type": "bishop",
+      "piece_enabled": true,
+      "piece_effect_profile_id": "bishop_spell_enchant",
+      "piece_payload_id": "p06_bishop_blade",
+      "short_description_cn": "打4，强化怪兽。",
+      "full_description_cn": "造成4点伤害，前场有怪兽时+1。L3+：最左侧怪兽ATK+2。L5/Burst：若前场≥2怪兽，追加2点伤害。Heat Route主力。",
+      "flavor_text_cn": "每一把剑都在等待属于自己的火焰。",
+      "art_key": "ignite_blade",
+      "art_prompt_hint_cn": "现代军团在役军械官身着旧式板甲与现代军用长衣，在历史城门轴线上为斜贯画面的长剑举行授刃仪式；暗银旧铁、氧化青铜与维护编号清晰，受控晶髓只在剑脊内部显出极细暗红内光。",
+      "legacy_names": [
+        "Ignite Blade"
+      ],
+      "series_id": "core_cathedral",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "core",
+        "spell",
+        "extender",
+        "damage"
+      ],
+      "related_cards": [
+        "Heat Channeler",
+        "Final Slash"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 2,
+      "layer_1_2_text": "点火/稳压：可靠4点伤害，有怪兽时+1。",
+      "layer_3_4_text": "增压/过热：额外使最左侧怪兽ATK+2，场面强化。",
+      "layer_5_text": "爆发：若前场≥2怪兽，追加2点伤害，Burst窗口输出。"
+    },
+    {
+      "id": "P07",
+      "cn_name": "热流导体",
+      "en_name": "Heat Channeler",
+      "card_type": "MONSTER",
+      "archetype_role": "EXTENDER",
+      "rarity": "COMMON",
+      "board_zone": "FRONT_ROW",
+      "display_type": "UNIT",
+      "od_cost": 0,
+      "load_cost": 2,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 2,
+      "unit_defense": 4,
+      "route_id": "heat_route",
+      "route_step": 2,
+      "next_cards": [
+        "Pressure Relay",
+        "Final Slash"
+      ],
+      "keywords": [],
+      "tags": [
+        "extender",
+        "damage",
+        "heat_route",
+        "front_row"
+      ],
+      "effect_ids": [
+        "damage"
+      ],
+      "effect_values": {
+        "damage": 2
+      },
+      "calm_text": "基础：2/4身材，获得OD时+1 ATK。",
+      "heated_text": "追加：进场本回合+1 ATK。",
+      "overdrive_text": "追加：首次获得OD时对敌方怪兽造成1点伤害。",
+      "short_description_cn": "2/4，OD转场面压力。",
+      "full_description_cn": "前场怪兽，造成2点伤害。获得OD时本回合+1 ATK。L3+：本体ATK+1。L5/Burst：若前场有其他怪兽，护盾+1。Heat Route主力。",
+      "flavor_text_cn": "从精准到毁灭，只需要足够的热量。",
+      "art_key": "heat_channeler",
+      "art_prompt_hint_cn": "双臂接管线的导能者，身后有热流管线，黑铁身体。",
+      "legacy_names": [
+        "Thermal Lance"
+      ],
+      "series_id": "steam_monster",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "steam",
+        "monster",
+        "extender",
+        "damage"
+      ],
+      "related_cards": [
+        "Pressure Relay"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "tutor_enabled": true,
+      "tutor_timing": "on_play",
+      "tutor_series_id": "steam_monster",
+      "tutor_card_type": "MONSTER",
+      "tutor_tag": "monster",
+      "tutor_count": 1,
+      "tutor_text_cn": "入场时，从牌库检索1张蒸汽怪兽轴怪兽加入手牌。",
+      "engine_gain": 1,
+      "layer_1_2_text": "点火/稳压：2/4身材站场，OD转ATK。",
+      "layer_3_4_text": "增压/过热：本体ATK+1，蒸汽怪兽轴场压核心。",
+      "layer_5_text": "爆发：前场有其他怪兽时护盾+1，群体协同。"
+    },
+    {
+      "id": "P08",
+      "cn_name": "铁誓烽堡",
+      "en_name": "Pressure Relay",
+      "card_type": "BUILD",
+      "archetype_role": "EXTENDER",
+      "rarity": "COMMON",
+      "board_zone": "BACK_ROW",
+      "display_type": "SUSTAIN",
+      "od_cost": 0,
+      "load_cost": 2,
+      "require_od": 2,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "heat_route",
+      "route_step": 3,
+      "next_cards": [
+        "Final Slash"
+      ],
+      "keywords": [],
+      "tags": [
+        "extender",
+        "building",
+        "heat_route"
+      ],
+      "effect_ids": [
+        "self_od",
+        "shield"
+      ],
+      "effect_values": {
+        "self_od": 1,
+        "shield": 3
+      },
+      "calm_text": "基础：入场OD+1，护盾+2；可储存热量。",
+      "heated_text": "追加：进场自带1热量计数。",
+      "overdrive_text": "OD接口：阈值奖励额外OD+1。",
+      "piece_type": "rook",
+      "piece_enabled": true,
+      "piece_effect_profile_id": "rook_building_relay",
+      "piece_payload_id": "p08_rook_relay",
+      "short_description_cn": "双格烽堡与驻防平台；主动单体+1/+1。",
+      "full_description_cn": "基础入场：热量+1、护盾+3；本回合已出至少2张牌时额外热量+1。主动每回合一次：先成功打出2张牌，再消耗1 OD强化最先登场的前场棋子+1/+1。升级烽堡提供前方驻防平台；驻军、进攻和朝向请看棋子指令。",
+      "od_interface_text": "每回合一次：本回合成功打出至少2张牌、有前场棋子，消耗1 OD → 最先登场的前场棋子+1/+1。",
+      "building_charge_text": "获得正热量时充能+1，上限3；此主动接口消耗OD，不消耗充能。",
+      "building_resonance_text": "中期节奏建筑：多牌连打回合的场面放大器，随OD层自动升级增幅。",
+      "flavor_text_cn": "压力不是问题——它是动力。",
+      "art_key": "pressure_relay",
+      "art_prompt_hint_cn": "现代仍在服役的山口烽堡，以厚重城墙、门楼、铁闸、钟楼和中轴旗阵构成正交防线；维护口、警戒编号与替换模块嵌入历史结构，受控晶髓只在墙体基座、玉石节点和钟楼内胆显出克制内光。",
+      "legacy_names": [
+        "Pressure Loop"
+      ],
+      "series_id": "core_cathedral",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "core",
+        "building",
+        "extender"
+      ],
+      "related_cards": [
+        "Reactor Foundation",
+        "Final Slash"
+      ],
+      "building_tier": 1,
+      "building_unique": true,
+      "entry_condition_type": "od_at_least",
+      "entry_condition_value": 3,
+      "entry_condition_text_cn": "需要 OD 3 或更高。",
+      "engine_gain": 1,
+      "layer_1_2_text": "主动接口每回合一次，费用与收益见发动预览。",
+      "layer_3_4_text": "主动接口每回合一次，费用与收益见发动预览。",
+      "layer_5_text": "主动接口每回合一次，费用与收益见发动预览。",
+      "shield": 2
+    },
+    {
+      "id": "P09",
+      "cn_name": "超频脉冲",
+      "en_name": "Overclock Pulse",
+      "card_type": "SPELL",
+      "archetype_role": "EXTENDER",
+      "rarity": "COMMON",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "od_cost": 2,
+      "load_cost": 1,
+      "require_od": 2,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "overdrive_route",
+      "route_step": 2,
+      "next_cards": [
+        "Chain Conductor",
+        "Overdrive Eruption"
+      ],
+      "keywords": [
+        "overload"
+      ],
+      "tags": [
+        "extender",
+        "od_gain",
+        "draw"
+      ],
+      "effect_ids": [
+        "self_od",
+        "draw"
+      ],
+      "effect_values": {
+        "self_od": 2,
+        "draw": 1
+      },
+      "calm_text": "基础：自身OD+2，抽1张。",
+      "heated_text": "追加：下一张怪兽+1 ATK。",
+      "overdrive_text": "OD接口：消耗2 OD，对敌方前场造成2点伤害；Depth +1。",
+      "short_description_cn": "OD+2，抽1张。",
+      "full_description_cn": "自身OD+2，抽1张。L3+：最左侧怪兽ATK+1。L5/Burst：额外抽1张。Heated/Overdrive：追加抽1。Overdrive Route关键延展。",
+      "flavor_text_cn": "限制器？那只是建议。",
+      "art_key": "overclock_pulse",
+      "art_prompt_hint_cn": "OD Core向外释放环形脉冲，敌方怪兽轮廓被震动，红紫+蓝色。",
+      "legacy_names": [
+        "Overclock",
+        "Rising Heat"
+      ],
+      "series_id": "core_cathedral",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "core",
+        "spell",
+        "extender",
+        "od_gain"
+      ],
+      "related_cards": [
+        "Chain Conductor",
+        "Overdrive Eruption"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 2,
+      "layer_1_2_text": "点火/稳压：OD+2并抽1张，核心燃料。",
+      "layer_3_4_text": "增压/过热：额外使最左侧怪兽ATK+1，加速场面。",
+      "layer_5_text": "爆发：额外抽1张，Burst窗口最大化资源。"
+    },
+    {
+      "id": "P10",
+      "cn_name": "连锁导体",
+      "en_name": "Chain Conductor",
+      "card_type": "MONSTER",
+      "archetype_role": "EXTENDER",
+      "rarity": "COMMON",
+      "board_zone": "FRONT_ROW",
+      "display_type": "UNIT",
+      "od_cost": 0,
+      "load_cost": 2,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 3,
+      "unit_defense": 3,
+      "route_id": "overdrive_route",
+      "route_step": 3,
+      "next_cards": [
+        "Overdrive Eruption"
+      ],
+      "keywords": [],
+      "tags": [
+        "extender",
+        "damage",
+        "draw",
+        "front_row"
+      ],
+      "effect_ids": [
+        "damage",
+        "draw"
+      ],
+      "effect_values": {
+        "damage": 1,
+        "draw": 1
+      },
+      "calm_text": "基础：造成1点伤害，抽1张；路线推进时再抽1张。",
+      "heated_text": "追加：护盾+2。",
+      "overdrive_text": "追加：下次Depth增加-1。",
+      "short_description_cn": "3/3，路线导体抽牌。",
+      "full_description_cn": "前场怪兽，造成1点伤害并抽1张。前场有STARTER时额外抽1。L3+：本体ATK+1。L5/Burst：最左侧其他怪兽ATK+1。推进路线时再抽1张。Overdrive Route Step3。",
+      "flavor_text_cn": "通道已经打开，能量正在汇聚。",
+      "art_key": "chain_conductor",
+      "art_prompt_hint_cn": "背负链式导管的中型怪兽，连接多个能量节点，蓝橙能量流过导管。",
+      "legacy_names": [
+        "Flame Channeler"
+      ],
+      "series_id": "steam_monster",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "steam",
+        "monster",
+        "extender",
+        "draw"
+      ],
+      "related_cards": [
+        "Overdrive Eruption"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "tutor_enabled": true,
+      "tutor_timing": "on_play",
+      "tutor_series_id": "core_cathedral",
+      "tutor_card_type": "SPELL",
+      "tutor_tag": "extender",
+      "tutor_count": 1,
+      "tutor_text_cn": "入场时，从牌库检索1张炉心圣堂轴延展魔法加入手牌。",
+      "engine_gain": 1,
+      "layer_1_2_text": "点火/稳压：3/3身材，入场打1抽1，跨轴桥接。",
+      "layer_3_4_text": "增压/过热：本体ATK+1，场面价值提升。",
+      "layer_5_text": "爆发：给最左侧怪兽ATK+1，蒸汽转法术终结。"
+    },
+    {
+      "id": "P11",
+      "cn_name": "冷却回路",
+      "en_name": "Cooldown",
+      "card_type": "SPELL",
+      "archetype_role": "CONTROL",
+      "rarity": "COMMON",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "control_route",
+      "route_step": 2,
+      "next_cards": [
+        "Chain Breaker"
+      ],
+      "keywords": [],
+      "tags": [
+        "control",
+        "depth_recovery",
+        "shield"
+      ],
+      "effect_ids": [
+        "self_od",
+        "shield"
+      ],
+      "effect_values": {
+        "self_od": -2,
+        "shield": 2
+      },
+      "calm_text": "基础：Depth -3，自身OD -2，护盾+2。",
+      "heated_text": "追加：Boss OD -2。",
+      "overdrive_text": "若解除Abyss Lock：抽1张。",
+      "short_description_cn": "Depth -3，护盾+2。",
+      "full_description_cn": "Depth-3，自身OD-2，护盾+2。L3+：若处于Backlash，减少1回合。L5/Burst：额外护盾+2。Control Route核心恢复牌。",
+      "flavor_text_cn": "热到极致之后，是绝对零度。",
+      "art_key": "cooldown",
+      "art_prompt_hint_cn": "青绿色冷却液穿过过热管线，紫色裂纹被压住。",
+      "legacy_names": [
+        "Cooldown"
+      ],
+      "series_id": "abyss_containment",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "abyss",
+        "spell",
+        "control",
+        "depth"
+      ],
+      "related_cards": [
+        "Heat Sink",
+        "Chain Breaker"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "tutor_enabled": true,
+      "tutor_timing": "on_play",
+      "tutor_series_id": "abyss_containment",
+      "tutor_card_type": "BUILD",
+      "tutor_tag": "building",
+      "tutor_count": 1,
+      "tutor_text_cn": "打出时，从牌库检索1张深渊封压轴建筑加入手牌。",
+      "engine_gain": 0,
+      "layer_1_2_text": "点火/稳压：Depth-3+护盾+2，安全启动恢复。",
+      "layer_3_4_text": "增压/过热：可减少Backlash反噬回合，控制深度风险。",
+      "layer_5_text": "爆发：额外护盾+2，Burst期间的控制安全出口。"
+    },
+    {
+      "id": "P12",
+      "cn_name": "干扰信号",
+      "en_name": "Jam Signal",
+      "card_type": "COUNTER",
+      "archetype_role": "CONTROL",
+      "rarity": "COMMON",
+      "board_zone": "BACK_ROW",
+      "display_type": "TRAP",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "control_route",
+      "route_step": 1,
+      "next_cards": [
+        "Cooldown"
+      ],
+      "keywords": [
+        "jam"
+      ],
+      "tags": [
+        "control",
+        "counter",
+        "boss_od_down"
+      ],
+      "effect_ids": [
+        "enemy_od"
+      ],
+      "effect_values": {
+        "enemy_od": -2
+      },
+      "calm_text": "基础：Boss OD增长时，Boss OD -2。",
+      "heated_text": "追加：护盾+2。",
+      "overdrive_text": "追加：Depth -1。",
+      "short_description_cn": "反制，Boss OD -2。",
+      "full_description_cn": "反制。Boss OD增长时触发：Boss OD -2。Boss Overdrive时额外-1。L3+：触发后Depth-1。L5/Burst：Backlash-1。Control Route Step1。",
+      "flavor_text_cn": "在信息战中，沉默是最强的武器。",
+      "art_key": "jam_signal",
+      "art_prompt_hint_cn": "青绿色干扰波像锁链一样缠住红色Boss OD波形，多个信号节点亮起。",
+      "legacy_names": [
+        "Jam Signal"
+      ],
+      "series_id": "abyss_containment",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "abyss",
+        "counter",
+        "control",
+        "jam"
+      ],
+      "related_cards": [
+        "Cooldown",
+        "Chain Breaker"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 0,
+      "layer_1_2_text": "点火/稳压：后场反制Boss OD增长-2。",
+      "layer_3_4_text": "增压/过热：触发后Depth-1，压制超速风险。",
+      "layer_5_text": "爆发：触发后Backlash-1，反噬期间安全控制。"
+    },
+    {
+      "id": "P13",
+      "cn_name": "热沉装置",
+      "en_name": "Heat Sink",
+      "card_type": "BUILD",
+      "archetype_role": "CONTROL",
+      "rarity": "COMMON",
+      "board_zone": "BACK_ROW",
+      "display_type": "SUSTAIN",
+      "od_cost": 0,
+      "load_cost": 2,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "control_route",
+      "route_step": 2,
+      "next_cards": [
+        "Chain Breaker"
+      ],
+      "keywords": [
+        "shield"
+      ],
+      "tags": [
+        "control",
+        "building",
+        "shield"
+      ],
+      "effect_ids": [
+        "shield"
+      ],
+      "effect_values": {
+        "shield": 3
+      },
+      "calm_text": "基础：护盾+3。",
+      "heated_text": "若Depth>=3：Depth -1。",
+      "overdrive_text": "若Depth>=6：额外护盾+2；OD接口费用-1。",
+      "short_description_cn": "入场防护；主动为下次Depth增长准备减免。",
+      "full_description_cn": "基础入场护盾+3；Depth达到3时另按规则降低当前Depth。主动每回合一次：优先1 OD，否则1冷却充能，准备下次Depth增长减免；具体额度见发动预览。准备减免不会立即降低当前Depth。",
+      "od_interface_text": "每回合一次：优先1 OD，否则1冷却充能 → 准备下次Depth增长减免，额度见预览。",
+      "building_charge_text": "获得正热量时充能+1；Depth降低也可获得1冷却充能，上限3。",
+      "building_resonance_text": "Depth控制核心：把控制牌的降Depth转成后续安全窗口，反噬期间的安全港。",
+      "flavor_text_cn": "真正的坚壁，连太阳的热量都能吸收。",
+      "art_key": "heat_sink",
+      "art_prompt_hint_cn": "巨大散热片与冷却塔插入深渊裂隙，吸走橙色热雾和紫黑污染。",
+      "legacy_names": [
+        "Heat Sink"
+      ],
+      "series_id": "abyss_containment",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "abyss",
+        "building",
+        "control",
+        "shield"
+      ],
+      "related_cards": [
+        "Cooldown",
+        "Containment Wall"
+      ],
+      "building_tier": 0,
+      "building_unique": true,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "tutor_enabled": true,
+      "tutor_timing": "on_building_activate",
+      "tutor_series_id": "abyss_containment",
+      "tutor_card_type": "COUNTER",
+      "tutor_tag": "control",
+      "tutor_count": 1,
+      "tutor_text_cn": "主动发动成功后，从牌库检索1张深渊封压轴反制牌加入手牌。",
+      "engine_gain": 0,
+      "layer_1_2_text": "主动接口每回合一次，费用与收益见发动预览。",
+      "layer_3_4_text": "主动接口每回合一次，费用与收益见发动预览。",
+      "layer_5_text": "主动接口每回合一次，费用与收益见发动预览。",
+      "shield": 3
+    },
+    {
+      "id": "P14",
+      "cn_name": "连锁断路器",
+      "en_name": "Chain Breaker",
+      "card_type": "COUNTER",
+      "archetype_role": "CONTROL",
+      "rarity": "RARE",
+      "board_zone": "BACK_ROW",
+      "display_type": "TRAP",
+      "od_cost": 0,
+      "load_cost": 2,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "control_route",
+      "route_step": 3,
+      "next_cards": [],
+      "keywords": [
+        "jam"
+      ],
+      "tags": [
+        "control",
+        "finisher",
+        "boss_od_down"
+      ],
+      "effect_ids": [
+        "enemy_od"
+      ],
+      "effect_values": {
+        "enemy_od": -4
+      },
+      "calm_text": "结束己方回合后、Boss行动前触发一次。",
+      "heated_text": "Control Route已完成时额外Boss OD -2。",
+      "overdrive_text": "触发后进入墓地。",
+      "short_description_cn": "布置后场；回合交接时Boss OD -4，触发后消耗。",
+      "full_description_cn": "布置到己方后场。结束己方回合后、Boss行动前自动触发一次：Boss OD -4，随后进入墓地。Control Route已完成时消耗该路线，再额外降低Boss OD 2。等待时不占用手发反制窗口。",
+      "flavor_text_cn": "连破坏本身，也可以被破坏。",
+      "art_key": "chain_breaker",
+      "art_prompt_hint_cn": "一枚断路器切断发红锁链，青绿火花飞散，热金奖励光闪现。",
+      "legacy_names": [
+        "Chain Breaker",
+        "Overload Disrupt"
+      ],
+      "series_id": "abyss_containment",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "abyss",
+        "counter",
+        "control",
+        "jam",
+        "finisher"
+      ],
+      "related_cards": [
+        "Jam Signal",
+        "Cooldown"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 0,
+      "layer_1_2_text": "回合交接时自动反制；触发一次后消耗。",
+      "layer_3_4_text": "回合交接时自动反制；触发一次后消耗。",
+      "layer_5_text": "回合交接时自动反制；触发一次后消耗。"
+    },
+    {
+      "id": "P15",
+      "cn_name": "热压壁垒兽",
+      "en_name": "Thermal Bulwark",
+      "card_type": "MONSTER",
+      "archetype_role": "DEFENSE",
+      "rarity": "COMMON",
+      "board_zone": "FRONT_ROW",
+      "display_type": "UNIT",
+      "od_cost": 0,
+      "load_cost": 2,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "is_guard_card": true,
+      "unit_power": 1,
+      "unit_defense": 6,
+      "route_id": "",
+      "route_step": 0,
+      "next_cards": [],
+      "keywords": [
+        "shield"
+      ],
+      "tags": [
+        "defense",
+        "front_row",
+        "shield",
+        "guard"
+      ],
+      "effect_ids": [
+        "shield"
+      ],
+      "effect_values": {
+        "shield": 3
+      },
+      "calm_text": "入场：护盾+5（效果3＋关键词2）。",
+      "heated_text": "仍为1/6守卫；可积累压力并使用技能。",
+      "overdrive_text": "可选择升格；新单位本回合不能攻击。",
+      "short_description_cn": "1/6守卫；入场获得5护盾；可用压力技能控场。",
+      "full_description_cn": "热压壁垒兽是防守支点：1攻击、6生命。入场获得5护盾（效果3＋关键词2）。存活时按相邻列守卫规则保护核心；压力技能需支付战术指令。OD L3或Depth≥2可升格为深渊束缚者，原单位入墓，保留格与朝向。",
+      "flavor_text_cn": "最好的防御，是把攻击变成燃料。",
+      "art_key": "thermal_bulwark",
+      "art_prompt_hint_cn": "厚重装甲巨兽，背部有压力罐和护盾板，黑铁巨兽轮廓。",
+      "legacy_names": [
+        "Heat Shield"
+      ],
+      "series_id": "steam_monster",
+      "secondary_series_ids": [
+        "abyss_containment"
+      ],
+      "search_tags": [
+        "steam",
+        "abyss",
+        "monster",
+        "defense",
+        "shield"
+      ],
+      "related_cards": [
+        "Containment Wall",
+        "Heat Channeler"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 1,
+      "layer_1_2_text": "入场护盾+5；1/6守卫，保护核心相邻列。",
+      "layer_3_4_text": "OD L3或Depth≥2时，选中此棋子升格为深渊束缚者。",
+      "layer_5_text": "仍遵循守卫与升格规则；技能费用见棋子菜单。"
+    },
+    {
+      "id": "P16",
+      "cn_name": "封压壁",
+      "en_name": "Containment Wall",
+      "card_type": "BUILD",
+      "archetype_role": "DEFENSE",
+      "rarity": "COMMON",
+      "board_zone": "BACK_ROW",
+      "display_type": "SUSTAIN",
+      "od_cost": 0,
+      "load_cost": 2,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "",
+      "route_step": 0,
+      "next_cards": [],
+      "keywords": [
+        "shield"
+      ],
+      "tags": [
+        "defense",
+        "building",
+        "shield",
+        "prevention"
+      ],
+      "effect_ids": [
+        "shield"
+      ],
+      "effect_values": {
+        "shield": 4
+      },
+      "calm_text": "基础：护盾+4，防一次破坏。",
+      "heated_text": "追加：被保护怪兽恢复+2 DEF。",
+      "overdrive_text": "追加：触发后Depth -1。",
+      "short_description_cn": "防守建筑，护盾+3，被动防破坏+压制Boss OD。",
+      "full_description_cn": "建筑。入场护盾+3。防止一次友方被破坏(减免3伤害后进墓地)。主动接口：消耗1充能或1 OD获得护盾并降低Boss OD。Backlash期间安全建筑。",
+      "od_interface_text": "点击建筑：1封压充能 → 护盾+4，Boss OD-1（强）；1 OD → 护盾+3，Boss OD-1。",
+      "building_charge_text": "场上每次通过出牌获得OD时，本建筑充能+1（最多1）。",
+      "building_resonance_text": "防守反制奇点：被动防止3点伤害后进墓地；主动压制Boss OD爆发节奏。",
+      "flavor_text_cn": "有些墙不只是墙，是最后的防线。",
+      "art_key": "containment_wall",
+      "art_prompt_hint_cn": "巨型黑铁封压墙压住深渊裂口，墙面有蓝色锁环和铜制铆钉。",
+      "legacy_names": [
+        "Containment Wall"
+      ],
+      "series_id": "abyss_containment",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "abyss",
+        "building",
+        "defense",
+        "shield"
+      ],
+      "related_cards": [
+        "Thermal Bulwark",
+        "Heat Sink"
+      ],
+      "building_tier": 1,
+      "building_unique": true,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 0,
+      "layer_1_2_text": "点火/稳压：入场护盾+3，被动防线基础。",
+      "layer_3_4_text": "增压/过热：主动消耗充能/OD压制Boss OD+护盾。",
+      "layer_5_text": "爆发：被动挡致命伤害+主动压制Boss，Backlash安全港。",
+      "shield": 3
+    },
+    {
+      "id": "P17",
+      "cn_name": "紧急泄压",
+      "en_name": "Emergency Vent",
+      "card_type": "SPELL",
+      "archetype_role": "DEFENSE",
+      "rarity": "COMMON",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "od_cost": 0,
+      "load_cost": 1,
+      "require_od": 0,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "",
+      "route_step": 0,
+      "next_cards": [],
+      "keywords": [
+        "rapid"
+      ],
+      "tags": [
+        "defense",
+        "draw",
+        "shield",
+        "depth_recovery",
+        "od_down"
+      ],
+      "effect_ids": [
+        "draw",
+        "shield",
+        "self_od"
+      ],
+      "effect_values": {
+        "draw": 1,
+        "shield": 2,
+        "self_od": -1
+      },
+      "calm_text": "基础：抽1张，护盾+2，自身OD-1。",
+      "heated_text": "追加：护盾+1。",
+      "overdrive_text": "若Depth>=6：Depth -2。",
+      "short_description_cn": "抽1，护盾+2，OD-1。",
+      "full_description_cn": "抽1张，获得2点护盾，自身OD-1。L3+：Depth Pressure -1。L5/Burst：若Backlash中则Backlash-1，否则额外护盾+2。",
+      "flavor_text_cn": "速度即是力量——但别忘了刹车。",
+      "art_key": "emergency_vent",
+      "art_prompt_hint_cn": "过热炉心打开泄压阀，橙红蒸汽被导入青绿冷却管。",
+      "legacy_names": [
+        "Quick Boost"
+      ],
+      "series_id": "generic",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "starter",
+        "draw",
+        "shield",
+        "defense"
+      ],
+      "related_cards": [],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 0,
+      "layer_1_2_text": "点火/稳压：抽1+护盾+2，安全过牌降压。",
+      "layer_3_4_text": "增压/过热：额外Depth-1，控制引擎超速。",
+      "layer_5_text": "爆发：Backlash-1或护盾+2，通用紧急刹车。"
+    },
+    {
+      "id": "P18",
+      "cn_name": "终端斩击",
+      "en_name": "Final Slash",
+      "card_type": "SPELL",
+      "archetype_role": "FINISHER",
+      "rarity": "SUPER",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "od_cost": 0,
+      "load_cost": 2,
+      "require_od": 4,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "heat_route",
+      "route_step": 4,
+      "next_cards": [],
+      "keywords": [],
+      "tags": [
+        "finisher",
+        "damage",
+        "heat_route",
+        "super"
+      ],
+      "effect_ids": [
+        "damage"
+      ],
+      "effect_values": {
+        "damage": 10
+      },
+      "calm_text": "不能发挥完整威力。",
+      "heated_text": "Heat Route完成时额外触发一次。",
+      "overdrive_text": "追加：伤害+5。",
+      "short_description_cn": "终结斩击，Heat Route奖励。",
+      "full_description_cn": "终结。造成12点伤害。完成Heat Route时额外触发一次。L5/Burst：额外+5伤害。Overdrive：追加+5。Heat Route终点。",
+      "flavor_text_cn": "这一剑，是整场战斗的句号。",
+      "art_key": "final_slash",
+      "art_prompt_hint_cn": "巨大热金刀光划过战场，背后是满刻度OD Core，红紫边缘。",
+      "legacy_names": [
+        "Final Slash"
+      ],
+      "series_id": "core_cathedral",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "core",
+        "spell",
+        "finisher",
+        "damage"
+      ],
+      "related_cards": [
+        "Pressure Relay",
+        "Ignite Blade"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "",
+      "entry_condition_value": 0,
+      "entry_condition_text_cn": "",
+      "engine_gain": 0,
+      "layer_1_2_text": "点火/稳压：可打出但仅基础12伤害，性价比低。",
+      "layer_3_4_text": "增压/过热：Heat Route完成时额外触发一次。",
+      "layer_5_text": "爆发：额外+5伤害（共计17+），Burst窗口终结利器。"
+    },
+    {
+      "id": "P19",
+      "cn_name": "炉心圣堂",
+      "en_name": "Core Cathedral",
+      "card_type": "BUILD",
+      "archetype_role": "FINISHER",
+      "rarity": "SUPER",
+      "board_zone": "BACK_ROW",
+      "display_type": "SUSTAIN",
+      "od_cost": 0,
+      "load_cost": 3,
+      "require_od": 8,
+      "require_load": 0,
+      "require_awaken": false,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "overdrive_route",
+      "route_step": 4,
+      "next_cards": [],
+      "keywords": [],
+      "tags": [
+        "finisher",
+        "building",
+        "overdrive_route",
+        "super",
+        "aura"
+      ],
+      "effect_ids": [
+        "shield"
+      ],
+      "effect_values": {
+        "shield": 5
+      },
+      "calm_text": "不能使用。",
+      "heated_text": "不能使用（除非其他效果允许）。",
+      "overdrive_text": "完整生效：忽略Depth增加，怪兽ATK+1。",
+      "short_description_cn": "终场奇观，护盾+6，群体共鸣终结窗口。",
+      "full_description_cn": "建筑。需高OD与炉心圣堂轴铺垫。入场护盾+6。L3-L4：登场Depth+1。L5/Burst：登场不增Depth+全体怪兽+1/+1。主动接口：3 OD/充能群体强化+护盾。终场奇观。",
+      "od_interface_text": "点击建筑：3 OD/充能 → 全体怪兽+2/+1(非Overdrive)或+3/+2(Overdrive)，护盾+3/5，非Overdrive下Depth+1。",
+      "building_charge_text": "场上每次通过出牌获得OD时，本建筑充能+1（最多5）。",
+      "building_resonance_text": "终场奇观：Overdrive光环使怪兽ATK+1，主动接口数值翻倍，终结回合核心。",
+      "flavor_text_cn": "在深渊之上，圣堂即是力量。",
+      "art_key": "core_cathedral",
+      "art_prompt_hint_cn": "巨大黑铁圣堂内部，反应炉祭坛悬在中央，齿轮管线和仪式环围绕炉心旋转。",
+      "legacy_names": [
+        "Core Cathedral"
+      ],
+      "series_id": "core_cathedral",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "core",
+        "building",
+        "finisher",
+        "aura"
+      ],
+      "related_cards": [
+        "Reactor Foundation",
+        "Pressure Relay",
+        "Overdrive Eruption"
+      ],
+      "building_tier": 2,
+      "building_unique": true,
+      "entry_condition_type": "series_played",
+      "entry_condition_value": 2,
+      "entry_condition_text_cn": "需要本局已使用至少2张炉心圣堂轴卡，并满足高OD门槛。",
+      "engine_gain": 1,
+      "layer_1_2_text": "点火/稳压：需高OD与炉心圣堂轴铺垫，暂不可用。",
+      "layer_3_4_text": "增压/过热：可登场有Depth代价，在场怪兽ATK+1光环。",
+      "layer_5_text": "爆发：完整奇观，登场不增Depth+全体+1/+1，主动接口+3/+2/护盾+5。",
+      "shield": 6
+    },
+    {
+      "id": "P20",
+      "cn_name": "末王之火",
+      "en_name": "Overdrive Eruption",
+      "card_type": "SPELL",
+      "archetype_role": "FINISHER",
+      "rarity": "SUPER",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "od_cost": 10,
+      "load_cost": 3,
+      "require_od": 10,
+      "require_load": 0,
+      "require_awaken": true,
+      "unit_power": 0,
+      "unit_defense": 0,
+      "route_id": "overdrive_route",
+      "route_step": 4,
+      "next_cards": [],
+      "keywords": [
+        "overload"
+      ],
+      "tags": [
+        "finisher",
+        "damage",
+        "self_damage",
+        "overdrive_route",
+        "super"
+      ],
+      "effect_ids": [
+        "damage",
+        "self_damage"
+      ],
+      "effect_values": {
+        "damage": 20,
+        "self_damage": 3
+      },
+      "calm_text": "不能使用。",
+      "heated_text": "不能使用。",
+      "overdrive_text": "消耗满OD，释放终结喷发。",
+      "short_description_cn": "满OD终结，20伤害。",
+      "full_description_cn": "终结。需要觉醒+OD满。造成20点伤害，自身反噬3。Overdrive Route完成时额外+4。OD清零。L5/Burst：可打出（需满足觉醒+满OD条件）。",
+      "flavor_text_cn": "将所有限制抛诸脑后，让能量决定一切。",
+      "art_key": "overdrive_eruption",
+      "art_prompt_hint_cn": "现代城市紧急启用封存在地下王陵中的战争遗产，王冠封印、陵门石阶、军阵与青铜礼器构成主体；隔离设施、维护平台和封存编号仍清晰，终结时地下晶髓储备提高显露并形成受控内光与王火，不出现机械喷发塔。",
+      "legacy_names": [
+        "Overdrive Eruption",
+        "Nova Burst"
+      ],
+      "series_id": "core_cathedral",
+      "secondary_series_ids": [],
+      "search_tags": [
+        "core",
+        "spell",
+        "finisher",
+        "damage",
+        "od_cost"
+      ],
+      "related_cards": [
+        "Core Cathedral",
+        "Chain Conductor"
+      ],
+      "building_tier": -1,
+      "building_unique": false,
+      "entry_condition_type": "active_monsters",
+      "entry_condition_value": 2,
+      "entry_condition_text_cn": "Planned: awakened + >=2 monsters on field. Metadata only.",
+      "engine_gain": 0,
+      "layer_1_2_text": "点火/稳压：锁定，需觉醒+满OD。",
+      "layer_3_4_text": "增压/过热：锁定，需觉醒+满OD+前场2怪兽。",
+      "layer_5_text": "爆发：满OD终结，20伤害+反噬3。Overdrive Route完成时额外+4。"
+    }
+  ],
+  "description": "Phase 7A-5B - Building Role Rebalance"
+}

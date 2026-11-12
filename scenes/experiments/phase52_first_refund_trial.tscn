@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase51_charged_cannon_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase52_thermal_refund_trial.gd" id="2"]
+[node name="FirstThermalRefundTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+thermal_refund_profile = "first-full-refund"
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "满热流 · 首次追击回流"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "先领取仪式并使用一次中阶，正常OD增长积累热流。\n首次满3层贯流轰击瞄准Boss核心，可申请返还1指令。\n每战只尝试一次；回合额度用尽或高Depth仍会拒绝。\n完整支出继续累计Depth，追击前查看实际费用。\n同一早P02牌序；重开保留本档。"

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb3e_complete_battle.tscn" id="1_base"]
+[ext_resource type="Script" path="res://scenes/experiments/gb3f_ritual_finisher.gd" id="2_script"]
+
+[node name="RitualFinisher" instance=ExtResource("1_base")]
+script = ExtResource("2_script")
+
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "炉心汇流 · 仪式终结实验"
+
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "OD 达到 8 即可提前终结。两枚棋子分别攻击，或驻防并打出控制牌，可改变终结结果。\n在终结菜单选择路径与透支；Depth 达到 5 时不能透支。"

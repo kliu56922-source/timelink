@@ -1,0 +1,106 @@
+{
+  "version": "18J-2-v1",
+  "notes": "Optional 3D board-piece mapping. Set enabled=true and scene_path to a PackedScene or imported GLB path when a real model is ready.",
+  "models": [
+    {
+      "card_id": "P02",
+      "name": "Ember Familiar",
+      "enabled": false,
+      "scene_path": "res://assets/models/pieces/p02_ember_familiar.tscn",
+      "scale": [1.0, 1.0, 1.0],
+      "y_offset": 0.20,
+      "placeholder_body": [0.62, 0.34, 0.48],
+      "placeholder_core": [0.44, 0.045, 0.10]
+    },
+    {
+      "card_id": "P07",
+      "name": "Heat Conductor",
+      "enabled": false,
+      "scene_path": "res://assets/models/pieces/p07_heat_conductor.tscn",
+      "scale": [1.05, 1.05, 1.05],
+      "y_offset": 0.22,
+      "placeholder_body": [0.68, 0.38, 0.52],
+      "placeholder_core": [0.50, 0.052, 0.12]
+    },
+    {
+      "card_id": "P10",
+      "name": "Chain Conductor",
+      "enabled": false,
+      "scene_path": "res://assets/models/pieces/p10_chain_conductor.tscn",
+      "scale": [1.08, 1.08, 1.08],
+      "y_offset": 0.22,
+      "placeholder_body": [0.70, 0.40, 0.54],
+      "placeholder_core": [0.52, 0.052, 0.12]
+    },
+    {
+      "card_id": "P15",
+      "name": "Thermal Bulwark",
+      "enabled": false,
+      "scene_path": "res://assets/models/pieces/p15_thermal_bulwark.tscn",
+      "scale": [1.05, 1.05, 1.05],
+      "y_offset": 0.22,
+      "placeholder_body": [0.76, 0.42, 0.56],
+      "placeholder_core": [0.56, 0.052, 0.12]
+    },
+    {
+      "card_id": "A01",
+      "name": "Coreforged Spirit",
+      "enabled": false,
+      "scene_path": "res://assets/models/pieces/a01_coreforged_spirit.tscn",
+      "scale": [1.18, 1.18, 1.18],
+      "y_offset": 0.26,
+      "placeholder_body": [0.82, 0.48, 0.60],
+      "placeholder_core": [0.62, 0.060, 0.14]
+    },
+    {
+      "card_id": "A04",
+      "name": "Abyss Binder",
+      "enabled": false,
+      "scene_path": "res://assets/models/pieces/a04_abyss_binder.tscn",
+      "scale": [1.14, 1.14, 1.14],
+      "y_offset": 0.24,
+      "placeholder_body": [0.84, 0.36, 0.62],
+      "placeholder_core": [0.58, 0.052, 0.14]
+    },
+    {
+      "card_id": "A06",
+      "name": "Titan Steam Engine God",
+      "enabled": false,
+      "scene_path": "res://assets/models/pieces/a06_titan_steam_engine_god.tscn",
+      "scale": [1.34, 1.34, 1.34],
+      "y_offset": 0.32,
+      "placeholder_body": [1.04, 0.58, 0.76],
+      "placeholder_core": [0.74, 0.072, 0.16]
+    },
+    {
+      "card_id": "P05",
+      "name": "Reactor Foundation",
+      "enabled": false,
+      "scene_path": "res://assets/models/pieces/p05_reactor_foundation.tscn",
+      "scale": [0.92, 0.92, 0.92],
+      "y_offset": 0.16,
+      "placeholder_body": [0.82, 0.24, 0.56],
+      "placeholder_core": [0.58, 0.050, 0.12]
+    },
+    {
+      "card_id": "P13",
+      "name": "Heat Sink",
+      "enabled": false,
+      "scene_path": "res://assets/models/pieces/p13_heat_sink.tscn",
+      "scale": [0.92, 0.92, 0.92],
+      "y_offset": 0.16,
+      "placeholder_body": [0.82, 0.24, 0.56],
+      "placeholder_core": [0.58, 0.050, 0.12]
+    },
+    {
+      "card_id": "P19",
+      "name": "Core Cathedral",
+      "enabled": false,
+      "scene_path": "res://assets/models/pieces/p19_core_cathedral.tscn",
+      "scale": [1.10, 1.10, 1.10],
+      "y_offset": 0.20,
+      "placeholder_body": [0.96, 0.32, 0.66],
+      "placeholder_core": [0.66, 0.060, 0.14]
+    }
+  ]
+}

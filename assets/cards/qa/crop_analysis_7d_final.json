@@ -1,0 +1,42 @@
+{
+  "card_p06_ignite_blade.png": {
+    "risk": "HIGH",
+    "coverage_pct": 89.35361216730038,
+    "needs_adjust": true,
+    "bright_y_min": 188,
+    "bright_y_max": 1240,
+    "crop_top": 125,
+    "crop_bottom": 1128,
+    "crop_h": 1003
+  },
+  "card_p18_final_slash.png": {
+    "risk": "HIGH",
+    "coverage_pct": 87.06597222222221,
+    "needs_adjust": true,
+    "bright_y_min": 100,
+    "bright_y_max": 1252,
+    "crop_top": 125,
+    "crop_bottom": 1128,
+    "crop_h": 1003
+  },
+  "card_p19_core_cathedral.png": {
+    "risk": "MEDIUM",
+    "coverage_pct": 85.0,
+    "needs_adjust": true,
+    "bright_y_min": 72,
+    "bright_y_max": 1252,
+    "crop_top": 125,
+    "crop_bottom": 1128,
+    "crop_h": 1003
+  },
+  "card_p20_overdrive_eruption.png": {
+    "risk": "MEDIUM",
+    "coverage_pct": 83.58333333333333,
+    "needs_adjust": true,
+    "bright_y_min": 52,
+    "bright_y_max": 1252,
+    "crop_top": 125,
+    "crop_bottom": 1128,
+    "crop_h": 1003
+  }
+}

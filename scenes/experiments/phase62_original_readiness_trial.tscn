@@ -1,0 +1,6 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase61_first_barrier_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase62_od_readiness_trial.gd" id="2"]
+[node name="OriginalReadinessTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+od_readiness_profile = "original"

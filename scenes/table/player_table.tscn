@@ -1,0 +1,154 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/table/player_table.gd" id="1_script"]
+[ext_resource type="Script" path="res://ui/drop_zone.gd" id="2_drop_zone"]
+
+[sub_resource type="StyleBoxFlat" id="panel_bg"]
+bg_color = Color(0.06, 0.06, 0.1, 1)
+border_width_left = 2
+border_width_right = 2
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(0.15, 0.15, 0.25, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[node name="PlayerTable" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="TableBG" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("panel_bg")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 6
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 6
+theme_override_constants/margin_bottom = 4
+
+[node name="MainVBox" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="HeaderBar" type="HBoxContainer" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="PlayerNameLabel" type="Label" parent="MarginContainer/MainVBox/HeaderBar"]
+layout_mode = 2
+text = "Player"
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="HPLabel" type="Label" parent="MarginContainer/MainVBox/HeaderBar"]
+layout_mode = 2
+text = "HP: 30"
+horizontal_alignment = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(1, 0.35, 0.35, 1)
+
+[node name="ODCore" type="VBoxContainer" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+
+[node name="ODBar" type="ProgressBar" parent="MarginContainer/MainVBox/ODCore"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 10.0
+value = 0.0
+custom_minimum_size = Vector2(0, 12)
+
+[node name="ODZoneLabel" type="Label" parent="MarginContainer/MainVBox/ODCore"]
+layout_mode = 2
+text = "Calm"
+theme_override_font_sizes/font_size = 13
+theme_override_colors/font_color = Color(0.3, 0.5, 1, 1)
+
+[node name="HSep1" type="HSeparator" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+
+[node name="FieldZone" type="HBoxContainer" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="TrapZone" type="HBoxContainer" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="ChainZone" type="Label" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+text = "Chain"
+theme_override_font_sizes/font_size = 12
+theme_override_colors/font_color = Color(0.5, 0.9, 0.5, 1)
+
+[node name="SpellDropZone" type="Panel" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 36)
+mouse_filter = 1
+script = ExtResource("2_drop_zone")
+zone_type = "spell"
+
+[node name="MidSpacer" type="Control" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HSep2" type="HSeparator" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+
+[node name="HandZone" type="Control" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 180)
+
+[node name="BottomBar" type="HBoxContainer" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="DeckZone" type="Label" parent="MarginContainer/MainVBox/BottomBar"]
+layout_mode = 2
+text = "牌库:0"
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(0.7, 0.75, 1, 1)
+
+[node name="GraveyardZone" type="Label" parent="MarginContainer/MainVBox/BottomBar"]
+layout_mode = 2
+text = "墓地:0"
+theme_override_font_sizes/font_size = 10
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+
+[node name="BottomSpacer" type="Control" parent="MarginContainer/MainVBox/BottomBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ActionZone" type="HBoxContainer" parent="MarginContainer/MainVBox/BottomBar"]
+layout_mode = 2
+
+[node name="EndTurnBtn" type="Button" parent="MarginContainer/MainVBox/BottomBar/ActionZone"]
+layout_mode = 2
+text = "结束回合"
+custom_minimum_size = Vector2(90, 32)
+theme_override_font_sizes/font_size = 13
+
+[node name="DecorationSlots" type="HBoxContainer" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+theme_override_constants/separation = 8

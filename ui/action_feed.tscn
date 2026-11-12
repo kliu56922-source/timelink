@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bactfeed0001"]
+
+[ext_resource type="Script" path="res://ui/action_feed.gd" id="1_feed"]
+
+[node name="ActionFeed" type="VBoxContainer"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 280.0
+offset_bottom = 180.0
+mouse_filter = 1
+script = ExtResource("1_feed")

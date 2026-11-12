@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase100_engineering_book_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase101_construction_site_trial.gd" id="2"]
+[node name="ConstructionSiteTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "工程册 · 可受击工地"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "工程册稳筑2指令，立即生成可受击工地。\n完工前不启用冷却等设施能力，围护脚手架仅1耐久。\n下个己方回合完工，保留核心损伤和被打穿的墙段。\n被毁后不会自动复活，重建需要新费用与施工时间。\n急筑另耗2热，挤占普通OD和炉心精炼的热量。"

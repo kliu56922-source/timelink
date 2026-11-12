@@ -1,0 +1,5 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/playtest/phase166a_key_recipe.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/playtest/phase166b_deployment_combat.gd" id="2"]
+[node name="DeploymentCombat166B" instance=ExtResource("1")]
+script = ExtResource("2")

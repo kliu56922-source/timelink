@@ -1,0 +1,107 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/battle_result_panel.gd" id="1_script"]
+
+[node name="BattleResultPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_script")
+
+[node name="DarkBG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.8)
+mouse_filter = 0
+
+; ── Phase 23C0: Responsive centered result layout ──
+; MarginContainer → VBox(header + scroll_stats + footer_buttons)
+[node name="ResultMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 30
+
+[node name="ResultCenter" type="CenterContainer" parent="ResultMargin"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="ResultCard" type="PanelContainer" parent="ResultMargin/ResultCenter"]
+layout_mode = 2
+mouse_filter = 0
+theme_override_styles/panel = null
+custom_minimum_size = Vector2(280, 180)
+
+[node name="ResultVBox" type="VBoxContainer" parent="ResultMargin/ResultCenter/ResultCard"]
+layout_mode = 2
+mouse_filter = 0
+theme_override_constants/separation = 12
+
+; ── Header ──
+[node name="ResultLabel" type="Label" parent="ResultMargin/ResultCenter/ResultCard/ResultVBox"]
+layout_mode = 2
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 36
+
+[node name="InfoLabel" type="Label" parent="ResultMargin/ResultCenter/ResultCard/ResultVBox"]
+layout_mode = 2
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 18
+theme_override_colors/font_color = Color(0.7, 0.7, 0.7, 1)
+
+; ── Scrollable stats area (Phase 23C0: prevents button overflow) ──
+[node name="StatsScroll" type="ScrollContainer" parent="ResultMargin/ResultCenter/ResultCard/ResultVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 1
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 1
+custom_minimum_size = Vector2(280, 80)
+theme_override_styles/scroll = null
+
+[node name="StatsContent" type="MarginContainer" parent="ResultMargin/ResultCenter/ResultCard/ResultVBox/StatsScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_bottom = 4
+
+; StatsLabel added here at runtime by _build_stats()
+
+; ── Footer buttons (fixed, never scroll away) ──
+[node name="BtnContainer" type="HBoxContainer" parent="ResultMargin/ResultCenter/ResultCard/ResultVBox"]
+layout_mode = 2
+alignment = 1
+mouse_filter = 0
+theme_override_constants/separation = 20
+
+[node name="ReturnButton" type="Button" parent="ResultMargin/ResultCenter/ResultCard/ResultVBox/BtnContainer"]
+layout_mode = 2
+text = "返回主页"
+theme_override_font_sizes/font_size = 16
+
+[node name="RetryButton" type="Button" parent="ResultMargin/ResultCenter/ResultCard/ResultVBox/BtnContainer"]
+layout_mode = 2
+text = "重试"
+theme_override_font_sizes/font_size = 16

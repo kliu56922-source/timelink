@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "heat": {
+    "max_segments": 10,
+    "zones": [
+      {
+        "id": "Calm",
+        "min": 0,
+        "max": 3,
+        "label_zh": "平稳",
+        "label_en": "Calm",
+        "color": "#5A8FB8",
+        "token_id": "ring_closed",
+        "token_text": "○"
+      },
+      {
+        "id": "Heated",
+        "min": 4,
+        "max": 7,
+        "label_zh": "炽热",
+        "label_en": "Heated",
+        "color": "#C8A24B",
+        "token_id": "furnace_section",
+        "token_text": "△"
+      },
+      {
+        "id": "Overdrive",
+        "min": 8,
+        "max": 10,
+        "label_zh": "过载",
+        "label_en": "Overdrive",
+        "color": "#D8432A",
+        "token_id": "warning_ring",
+        "token_text": "!"
+      }
+    ]
+  },
+  "charge": {
+    "label_zh": "充能",
+    "format": "{value}/{capacity}"
+  },
+  "layers": {
+    "count": 5,
+    "tokens": ["I", "II", "III", "IV", "V"],
+    "names": ["点火", "稳压", "增压", "过热", "爆发"]
+  },
+  "release": {
+    "labels": {
+      "ready": "可释放",
+      "insufficient_heat": "热量不足(需{threshold})",
+      "insufficient_command_points": "指令不足",
+      "not_player_turn": "未到玩家回合",
+      "no_legal_source": "无可用棋子",
+      "wrong_side": "非玩家侧",
+      "release_busy": "释放中",
+      "source_selection": "选择棋子",
+      "target_selection": "选择目标",
+      "unknown": "状态未知"
+    }
+  },
+  "timing": {
+    "normal_refresh_seconds": 0.6,
+    "threshold_change_seconds": 1.2,
+    "reduced_motion_enabled": false,
+    "reduced_motion_seconds": 0.0
+  }
+}

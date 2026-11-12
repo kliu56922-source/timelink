@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "piece_names": {
+    "pawn": "兵卒",
+    "knight": "骑士",
+    "bishop": "主教",
+    "rook": "战车",
+    "queen": "皇后"
+  },
+  "enhanced_payment": {
+    "command_cost": 1,
+    "depth_cost": 1,
+    "depth_zone_required": "Overdrive"
+  },
+  "profiles": {
+    "pawn_anchor_fan": {
+      "piece_type": "pawn",
+      "pattern_id": "piece_pawn",
+      "allowed_families": ["spell"],
+      "anchor_mode": "friendly_anchor",
+      "target_mode": "none",
+      "blocks_anchor_cell": false,
+      "enhance_modes": ["command", "depth"]
+    },
+    "knight_unit": {
+      "piece_type": "knight",
+      "pattern_id": "piece_knight",
+      "allowed_families": ["monster"],
+      "anchor_mode": "unit_self",
+      "target_mode": "enemy_unit",
+      "blocks_anchor_cell": false,
+      "enhance_modes": ["command", "depth"]
+    },
+    "pawn_unit": {
+      "piece_type": "pawn",
+      "pattern_id": "piece_pawn",
+      "allowed_families": ["monster"],
+      "anchor_mode": "unit_self",
+      "target_mode": "enemy_unit",
+      "blocks_anchor_cell": false,
+      "enhance_modes": ["command", "depth"]
+    },
+    "pawn_counter_watch": {
+      "piece_type": "pawn",
+      "pattern_id": "piece_pawn",
+      "allowed_families": ["counter"],
+      "anchor_mode": "board_cell",
+      "target_mode": "none",
+      "blocks_anchor_cell": false,
+      "enhance_modes": ["command", "depth"]
+    },
+    "pawn_building_aura": {
+      "piece_type": "pawn",
+      "pattern_id": "piece_pawn",
+      "allowed_families": ["building"],
+      "anchor_mode": "board_cell",
+      "target_mode": "none",
+      "blocks_anchor_cell": true,
+      "enhance_modes": ["command", "depth"]
+    },
+    "bishop_spell_enchant": {
+      "piece_type": "bishop",
+      "pattern_id": "piece_bishop",
+      "allowed_families": ["spell"],
+      "anchor_mode": "friendly_unit",
+      "target_mode": "none",
+      "blocks_anchor_cell": false,
+      "enhance_modes": ["command", "depth"]
+    },
+    "rook_building_relay": {
+      "piece_type": "rook",
+      "pattern_id": "piece_rook",
+      "allowed_families": ["building"],
+      "anchor_mode": "board_cell",
+      "target_mode": "friendly_unit",
+      "blocks_anchor_cell": true,
+      "enhance_modes": ["command", "depth"]
+    }
+  },
+  "payloads": {
+    "p01_formation_shield": {
+      "resolver_id": "p01_formation_shield",
+      "base": {
+        "shield_delta": 1,
+        "requires_formation": true
+      },
+      "enhanced": {
+        "shield_delta": 2,
+        "requires_formation": true
+      }
+    },
+    "p02_knight_action": {
+      "resolver_id": "p02_knight_action",
+      "base": {
+        "splash_damage": 0,
+        "facing_followup": false
+      },
+      "enhanced": {
+        "splash_damage": 1,
+        "facing_followup": true
+      }
+    },
+    "p03_vanguard_formation": {
+      "resolver_id": "p03_vanguard_formation",
+      "base": {
+        "formation_shield": 1,
+        "once_per_turn": true
+      },
+      "enhanced": {
+        "temporary_atk_bonus": 1,
+        "only_attack": true
+      }
+    },
+    "p04_tripwire_watch": {
+      "resolver_id": "p04_tripwire_watch",
+      "base": {
+        "watch_ranks": 1,
+        "shield_delta": 1
+      },
+      "enhanced": {
+        "watch_ranks": 2,
+        "shield_delta": 1
+      }
+    },
+    "p05_foundation_guard": {
+      "resolver_id": "p05_foundation_guard",
+      "base": {
+        "protected_units": 1,
+        "reduce": 1
+      },
+      "enhanced": {
+        "protected_units": 2,
+        "reduce": 1
+      }
+    },
+    "p06_bishop_blade": {
+      "resolver_id": "p06_bishop_blade",
+      "base": {
+        "atk_bonus": 0
+      },
+      "enhanced": {
+        "atk_bonus": 1
+      }
+    },
+    "p08_rook_relay": {
+      "resolver_id": "p08_rook_relay",
+      "base": {
+        "targets": "single"
+      },
+      "enhanced": {
+        "targets": "all"
+      }
+    }
+  }
+}

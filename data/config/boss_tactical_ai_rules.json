@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "max_actions_per_turn": 6,
+  "action_step_delay": 0.28,
+  "minimum_score": 0,
+  "seed_salt": 2706,
+  "weights": {
+    "Calm": {
+      "move": 30,
+      "attack": 22,
+      "attack_core": 18,
+      "turn": 28,
+      "skill": 20,
+      "lethal": 120,
+      "kill": 55,
+      "protect_core": 55,
+      "advance": 18,
+      "retreat": 28,
+      "threat": 12,
+      "cost_penalty": 5
+    },
+    "Heated": {
+      "move": 22,
+      "attack": 48,
+      "attack_core": 42,
+      "turn": 14,
+      "skill": 46,
+      "lethal": 150,
+      "kill": 85,
+      "protect_core": 24,
+      "advance": 32,
+      "retreat": 8,
+      "threat": 22,
+      "cost_penalty": 3
+    },
+    "Overdrive": {
+      "move": 14,
+      "attack": 62,
+      "attack_core": 78,
+      "turn": 6,
+      "skill": 68,
+      "lethal": 220,
+      "kill": 105,
+      "protect_core": 10,
+      "advance": 40,
+      "retreat": 2,
+      "threat": 28,
+      "cost_penalty": 2
+    }
+  }
+}

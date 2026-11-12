@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource path="res://scenes/presentation/tactical_garrison_presenter.gd" type="Script" id="1_garrison"]
+
+[node name="TacticalGarrisonPresenter" type="Node3D"]
+script = ExtResource("1_garrison")
+
+[node name="CandidateMarkerRoot" type="Node3D" parent="."]
+
+[node name="PendingMarkerRoot" type="Node3D" parent="."]
+
+[node name="BaseRangeMarkerRoot" type="Node3D" parent="."]
+
+[node name="BonusRangeMarkerRoot" type="Node3D" parent="."]

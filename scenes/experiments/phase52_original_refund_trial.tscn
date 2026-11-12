@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase51_charged_cannon_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase52_thermal_refund_trial.gd" id="2"]
+[node name="OriginalThermalRefundTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+thermal_refund_profile = "original"
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "满热流 · 原指令对照"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "正常OD增长积累热流，满3层可释放贯流轰击。\n本档按原费用，不增加返还。\n技能伤害仍受护盾、炉甲和阶段锁限制。\n同一早P02牌序；重开保留档位。"

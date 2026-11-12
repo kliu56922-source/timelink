@@ -1,0 +1,5 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/playtest/phase162a_single_weakpoint_playtest.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/playtest/phase162b_triple_weakpoint_playtest.gd" id="2"]
+[node name="TripleWeakpoint162B" instance=ExtResource("1")]
+script = ExtResource("2")

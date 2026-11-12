@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "uses_per_player_turn": 1,
+  "commands": [
+    {
+      "id": "surge",
+      "name_key": "core_command.surge.name",
+      "description_key": "core_command.surge.description",
+      "charge_cost": 2,
+      "effect": {
+        "type": "temporary_attack_bonus",
+        "amount": 1,
+        "duration": "player_turn"
+      },
+      "usable_during_backlash": false
+    },
+    {
+      "id": "vent",
+      "name_key": "core_command.vent.name",
+      "description_key": "core_command.vent.description",
+      "charge_cost": 3,
+      "effect": {
+        "type": "depth_reduce",
+        "amount": 1
+      },
+      "usable_during_backlash": true
+    },
+    {
+      "id": "redeploy",
+      "name_key": "core_command.redeploy.name",
+      "description_key": "core_command.redeploy.description",
+      "charge_cost": 1,
+      "effect": {
+        "type": "forced_lane_move"
+      },
+      "usable_during_backlash": false
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+[gd_scene load_steps=6 format=3 uid="uid://phase24a_boss_status_hud"]
+
+[ext_resource type="Script" path="res://ui/boss_status_hud.gd" id="1_script"]
+
+[sub_resource type="StyleBoxFlat" id="hp_fg"]
+bg_color = Color(0.9, 0.28, 0.14, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="hp_bg"]
+bg_color = Color(0.15, 0.15, 0.18, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="delay_fg"]
+bg_color = Color(0.62, 0.18, 0.12, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="delay_bg"]
+bg_color = Color(0.12, 0.12, 0.14, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="BossStatusHUD" type="Panel"]
+anchors_preset = 4
+anchor_top = 0.0
+anchor_bottom = 0.0
+offset_left = -260.0
+offset_top = 48.0
+offset_right = 260.0
+offset_bottom = 166.0
+custom_minimum_size = Vector2(440.0, 112.0)
+mouse_filter = 2
+z_index = 220
+script = ExtResource("1_script")
+
+[node name="Header" type="HBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = -10.0
+offset_bottom = 26.0
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="BossName" type="Label" parent="Header"]
+layout_mode = 2
+mouse_filter = 2
+text = "FORGE GUARD"
+horizontal_alignment = 0
+size_flags_stretch_ratio = 1.0
+
+[node name="PhaseLabel" type="Label" parent="Header"]
+layout_mode = 2
+mouse_filter = 2
+text = "PHASE 1"
+horizontal_alignment = 2
+
+[node name="HPStack" type="Control" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 30.0
+offset_right = -10.0
+offset_bottom = 70.0
+mouse_filter = 2
+
+[node name="HPDelayBar" type="ProgressBar" parent="HPStack"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+max_value = 85.0
+value = 85.0
+show_percentage = false
+theme_override_styles/fg = SubResource("delay_fg")
+theme_override_styles/bg = SubResource("delay_bg")
+
+[node name="HPBar" type="ProgressBar" parent="HPStack"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+max_value = 85.0
+value = 85.0
+show_percentage = false
+theme_override_styles/fg = SubResource("hp_fg")
+theme_override_styles/bg = SubResource("hp_bg")
+
+[node name="HPValue" type="Label" parent="HPStack"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+text = "85/85"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_font_sizes/font_size = 10
+
+[node name="DamageFloat" type="Label" parent="HPStack"]
+mouse_filter = 2
+text = ""
+horizontal_alignment = 2
+visible = false
+
+[node name="MetaRow" type="HBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 74.0
+offset_right = -10.0
+offset_bottom = 94.0
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="ShieldValue" type="Label" parent="MetaRow"]
+layout_mode = 2
+mouse_filter = 2
+text = "SHIELD 0"
+size_flags_stretch_ratio = 1.0
+
+[node name="ODValue" type="Label" parent="MetaRow"]
+layout_mode = 2
+mouse_filter = 2
+text = "OD 0/10"
+size_flags_stretch_ratio = 1.0
+
+[node name="ZoneValue" type="Label" parent="MetaRow"]
+layout_mode = 2
+mouse_filter = 2
+text = "CALM"
+horizontal_alignment = 2
+
+[node name="IntentRow" type="HBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+offset_left = 10.0
+offset_top = 98.0
+offset_right = -10.0
+offset_bottom = 116.0
+mouse_filter = 2
+
+[node name="IntentIcon" type="ColorRect" parent="IntentRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(12.0, 12.0)
+mouse_filter = 2
+color = Color(0.2, 0.78, 0.72, 1)
+
+[node name="IntentText" type="Label" parent="IntentRow"]
+layout_mode = 2
+mouse_filter = 2
+text = "Warming up..."
+horizontal_alignment = 0
+size_flags_stretch_ratio = 1.0

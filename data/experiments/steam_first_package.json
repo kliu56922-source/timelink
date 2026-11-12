@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "cards": [
+    {
+      "id": "S01",
+      "cn_name": "锅炉学徒",
+      "en_name": "Boiler Apprentice",
+      "card_type": "MONSTER",
+      "board_zone": "FRONT_ROW",
+      "display_type": "UNIT",
+      "archetype_role": "STARTER",
+      "unit_power": 1,
+      "unit_defense": 2,
+      "od_cost": 0,
+      "engine_gain": 1,
+      "load_cost": 1,
+      "series_id": "steam_monster",
+      "search_tags": [
+        "steam",
+        "monster",
+        "starter"
+      ],
+      "short_description_cn": "登场热量+1；有建筑时找蒸汽中转",
+      "full_description_cn": "普通棋子1/2：选择己方可召唤的空格登场，获得基础热量1。若控制完好己方炉心/蒸汽建筑，检索牌库第一张蒸汽中转怪兽到手（同名效果每回合一次）。没有建筑、目标或手牌空间时仍留下棋子；不会补偿抽牌。检索不会自动召唤。",
+      "related_cards": [
+        "Heat Channeler",
+        "Chain Conductor",
+        "Reactor Foundation"
+      ]
+    },
+    {
+      "id": "S02",
+      "cn_name": "战团调度",
+      "en_name": "Steam Muster",
+      "card_type": "SPELL",
+      "board_zone": "INSTANT",
+      "display_type": "NONE",
+      "archetype_role": "EXTENDER",
+      "od_cost": 1,
+      "engine_gain": 0,
+      "load_cost": 1,
+      "series_id": "steam_monster",
+      "search_tags": [
+        "steam",
+        "spell",
+        "extender"
+      ],
+      "short_description_cn": "热量−1：找蒸汽起手/中转到手",
+      "full_description_cn": "无需选择地块。场上须有存活蒸汽棋子；支付热量1，检索牌库第一张蒸汽起手或中转普通怪兽到手，排除泰坦蒸汽机神。同名每回合一次。费用不足、无目标或没有手牌空间时不能使用，不消耗卡牌/热量。此牌不获得基础热量，不自动召唤。",
+      "entry_condition_text_cn": "先登场蒸汽棋子；需要支付热量1；牌库须有可检索怪兽。",
+      "related_cards": [
+        "Boiler Apprentice",
+        "Heat Channeler",
+        "Chain Conductor"
+      ]
+    }
+  ]
+}

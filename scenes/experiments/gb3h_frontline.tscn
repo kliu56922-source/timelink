@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb3g_reaction_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/gb3h_frontline.gd" id="2"]
+
+[node name="FrontlineTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "炉心汇流 · 前线攻城"
+
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "烽堡：塔身＋前方可通行平台，共享耐久。\n驻防：绿圈内首伤减1，每敌方回合一次。\n前推：上一回合已建立的支点旁建设。敌场驻军攻城额外破盾2，每回合一次。\n预设、手发反制与OD终结继续可用。"

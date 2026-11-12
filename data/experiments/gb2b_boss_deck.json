@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "deck_id": "gb2b_forge_guard_deck",
+  "pools": {
+    "Calm": [{"card_id":"B-07","weight":1}],
+    "Heated": [{"card_id":"B-03","weight":2},{"card_id":"B-04","weight":2},{"card_id":"B-07","weight":4},{"card_id":"B-09","weight":1},{"card_id":"B-18","weight":2}],
+    "Overdrive": [{"card_id":"B-07","weight":2},{"card_id":"B-15","weight":3},{"card_id":"B-16","weight":2},{"card_id":"B-18","weight":1}]
+  }
+}

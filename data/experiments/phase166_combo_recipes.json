@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "ember_foundation_166a",
+  "name": "炉心阵地",
+  "keys": ["P02", "P05"],
+  "command_cost": 1,
+  "load_cost": 2,
+  "heat_gain": 4,
+  "shield_gain": 3,
+  "per_battle_limit": 1,
+  "derived": {"id": "D166_S01", "name": "锅炉学徒·衍生", "power": 1, "health": 2},
+  "formations": {"arm": {"foundation_offset": [1,0], "apprentice_offset": [-1,0]}, "valve": {"foundation_offset": [-1,0], "apprentice_offset": [1,0]}}
+}

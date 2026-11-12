@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase52_first_refund_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase61_ascension_barrier_trial.gd" id="2"]
+[node name="FirstAscensionBarrierTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+ascension_barrier_profile = "first-barrier"
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "炉躯显现 · 升格存续"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "首次实际成功把燃芯使魔升格为炉心锻灵，获得4护盾。\n仍支付原2生命；保留格与朝向，新单位本回合不能攻击。\n生命或Boss耗尽、反噬时不领取；每战一次。\n正常OD成长、调轨费用和首次满热流回流保持。\n重开保留本档；这是独立候选，尚非必胜关卡。"

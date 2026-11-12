@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb3k_steam_package.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/gb3l_basic_resources.gd" id="2"]
+[node name="BasicResourcesTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "基础牌 · 蓄火与排压试制"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "蓄火获得2热量：立即出牌或保留给OD。\n调度找来的棋子，仍需正常选格登场。\n排压付1热降低Depth2；Depth为0时保留。\n基础牌同名每回合一次，无需选地块。\n先试资源选择，再续接建筑与攻城。"

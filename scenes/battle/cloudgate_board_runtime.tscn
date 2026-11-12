@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://wy6ks5g04yu8"]
+
+[ext_resource type="Script" path="res://scenes/battle/cloudgate_board_runtime.gd" id="1_script"]
+
+[node name="CloudGateBoardRuntime" type="Node3D"]
+script = ExtResource("1_script")
+
+[node name="ModelPivot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+; Phase 22C: GLB instance added at runtime via script
+
+[node name="SocketRoot" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+; ── Phase 22F-6: 轴转置 — Z=五列横向, X=玩家/Boss分区 ──
+; 玩家侧 +X, Boss侧 -X
+; 五列沿 Z: [-3.00, -1.50, 0.00, 1.50, 3.00]
+
+; ── Player back row (BUILD/COUNTER) X=+2.05 ──
+[node name="P_BACK_0" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05, 0.42, -3.00)
+gizmo_extents = 0.12
+
+[node name="P_BACK_1" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05, 0.42, -1.50)
+gizmo_extents = 0.12
+
+[node name="P_BACK_2" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05, 0.42, 0.00)
+gizmo_extents = 0.12
+
+[node name="P_BACK_3" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05, 0.42, 1.50)
+gizmo_extents = 0.12
+
+[node name="P_BACK_4" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.05, 0.42, 3.00)
+gizmo_extents = 0.12
+
+; ── Player front row (MONSTER) X=+0.85 ──
+[node name="P_FRONT_0" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.85, 0.48, -3.00)
+gizmo_extents = 0.12
+
+[node name="P_FRONT_1" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.85, 0.48, -1.50)
+gizmo_extents = 0.12
+
+[node name="P_FRONT_2" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.85, 0.48, 0.00)
+gizmo_extents = 0.12
+
+[node name="P_FRONT_3" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.85, 0.48, 1.50)
+gizmo_extents = 0.12
+
+[node name="P_FRONT_4" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.85, 0.48, 3.00)
+gizmo_extents = 0.12
+
+; ── Boss front row X=-0.85 ──
+[node name="B_FRONT_0" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.85, 0.48, -3.00)
+gizmo_extents = 0.12
+
+[node name="B_FRONT_1" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.85, 0.48, -1.50)
+gizmo_extents = 0.12
+
+[node name="B_FRONT_2" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.85, 0.48, 0.00)
+gizmo_extents = 0.12
+
+[node name="B_FRONT_3" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.85, 0.48, 1.50)
+gizmo_extents = 0.12
+
+[node name="B_FRONT_4" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.85, 0.48, 3.00)
+gizmo_extents = 0.12
+
+; ── Boss back row X=-2.05 ──
+[node name="B_BACK_0" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05, 0.42, -3.00)
+gizmo_extents = 0.12
+
+[node name="B_BACK_1" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05, 0.42, -1.50)
+gizmo_extents = 0.12
+
+[node name="B_BACK_2" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05, 0.42, 0.00)
+gizmo_extents = 0.12
+
+[node name="B_BACK_3" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05, 0.42, 1.50)
+gizmo_extents = 0.12
+
+[node name="B_BACK_4" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.05, 0.42, 3.00)
+gizmo_extents = 0.12
+
+; ── Phase 22F-6: 特殊 Socket 重新校准 ──
+; ACTION_SLOT — 中央，不压OD装置
+[node name="ACTION_SLOT" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0, 0.48, 0.45)
+gizmo_extents = 0.12
+
+; BOSS_CORE — Boss侧远心
+[node name="BOSS_CORE" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60, 0.42, 0.00)
+gizmo_extents = 0.15
+
+; PLAYER_DECK/GY — +X 玩家侧
+[node name="PLAYER_DECK" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.40, 0.45, -3.10)
+gizmo_extents = 0.10
+
+[node name="PLAYER_GY" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.40, 0.45, -1.60)
+gizmo_extents = 0.10
+
+; BOSS_DECK/GY — -X Boss侧
+[node name="BOSS_DECK" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.40, 0.45, -3.10)
+gizmo_extents = 0.10
+
+[node name="BOSS_GY" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.40, 0.45, -1.60)
+gizmo_extents = 0.10
+
+; OD_DOCK — 玩家侧近端模型凹槽中心 (Phase 22F-6: 转置为 +X 侧)
+[node name="OD_DOCK" type="Marker3D" parent="SocketRoot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.40, 0.45, 3.10)
+gizmo_extents = 0.15

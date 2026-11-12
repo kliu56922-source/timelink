@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase62_ready_seven_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase65_ascended_core_heat_trial.gd" id="2"]
+[node name="AscendedCoreHeatTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+hero_heat_profile = "ascended-core-heat"
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "炉躯攻核 · 英雄蓄热"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "升格A01后，每回合首次真正打伤Boss核心：热量+1。\n其他单位的攻核与贯流炮不占英雄蓄热机会。\n有效增热会给热压壁垒兽蓄层；满层技能仍需正常指令。\n战斗增热仍共享每回合原上限；全盾与终局不蓄热。\n普通OD7热、仪式8热、首升格盾4；独立候选，尚非最终平衡或必胜。"

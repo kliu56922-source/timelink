@@ -1,0 +1,5 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/playtest/phase163_weakpoint_pacing.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/playtest/phase164_interaction_repairs.gd" id="2"]
+[node name="InteractionRepairs164" instance=ExtResource("1")]
+script = ExtResource("2")

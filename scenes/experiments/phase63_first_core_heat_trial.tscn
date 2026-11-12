@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase62_ready_seven_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase63_core_damage_heat_trial.gd" id="2"]
+[node name="FirstCoreHeatTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+core_damage_heat_profile = "first-core-heat"
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "攻核蓄热 · 炉流续接"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "每回合首次真正打伤Boss核心：热量+1。\n普通攻核与贯流炮共用一次；战斗增热仍共享原每回合上限。\n全护盾挡住、对局结束或非法操作不蓄热。\n有效增热会给热压壁垒兽蓄层；满层技能仍需正常指令。\n普通OD7热、仪式8热；独立候选，尚非最终平衡或必胜。"

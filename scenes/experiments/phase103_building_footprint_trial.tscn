@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+[ext_resource type="PackedScene" path="res://scenes/experiments/phase102_edge_fortification_trial.tscn" id="1"]
+[ext_resource type="Script" path="res://scenes/experiments/phase103_building_footprint_trial.gd" id="2"]
+[node name="BuildingFootprintTrial" instance=ExtResource("1")]
+script = ExtResource("2")
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "工程册 · 建筑规模与旋转"
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "工程册可选择冷却设施1×1、1×2或2×2，并旋转方向。\n付款前确认全部占格；付款后方向固定，完工保留损伤。\n四格共用一个核心与耐久，不会吞掉现有单位或内部墙。\n格边城防沿用上一阶段，与主体共用施工次数和指令。\n大尺寸目前只验证空间成本，尚未增加能力强度。"

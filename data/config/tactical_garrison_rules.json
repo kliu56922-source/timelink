@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "default_unit_profile": {
+    "can_garrison": true,
+    "size_class": "normal",
+    "range_profile_id": "none"
+  },
+  "denied_tags": ["large", "fusion", "siege_beast"],
+  "unit_overrides": {
+    "P07": {
+      "can_garrison": true,
+      "size_class": "normal",
+      "range_profile_id": "p07_channeler_high_ground"
+    },
+    "P15": {
+      "can_garrison": true,
+      "size_class": "normal",
+      "range_profile_id": "none"
+    },
+    "A06": {
+      "can_garrison": false,
+      "size_class": "large",
+      "range_profile_id": "none"
+    }
+  },
+  "structure_slots": {
+    "p08_fortification:garrison_0": {
+      "enabled": true,
+      "slot_role": "rampart",
+      "socket_name": "Garrison0",
+      "platform_height_offset": 1,
+      "support_relative_edge": "front",
+      "entry_mode": "adjacent_height_or_owner_passage"
+    }
+  },
+  "range_profiles": {
+    "p07_channeler_high_ground": {
+      "applies_to": "normal_attack",
+      "requires_strict_height_advantage": true,
+      "extra_attack_offsets": [[-1, -2], [0, -2], [1, -2]],
+      "damage_bonus": 0,
+      "affects_boss_core": false,
+      "affects_active_skill": false
+    }
+  },
+  "fallback_landing_relative_order": ["rear", "left", "right", "front"]
+}

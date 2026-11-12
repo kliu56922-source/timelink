@@ -1,0 +1,23 @@
+﻿# Godot 4
+.godot/
+*.import.tmp
+export.cfg
+*.pck
+*.exe
+*.zip
+
+# Builds & logs
+build/
+dist/
+*.log
+tmp_*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+__pycache__/

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb3f_ritual_finisher.tscn" id="1_base"]
+[ext_resource type="Script" path="res://scenes/experiments/gb3g_reaction_trial.gd" id="2_script"]
+
+[node name="ReactionTrial" instance=ExtResource("1_base")]
+script = ExtResource("2_script")
+
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "炉心汇流 · 对手回合反制"
+
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "伏线：布置后拦住进入监视格的敌军。\n偏转：自己回合布置减伤 3；留在手中可在敌方攻击棋子时 OD−1 减伤 2。\n手发每敌方回合一次，可放过；Depth<5 可透支增强。OD 8 可终结。"

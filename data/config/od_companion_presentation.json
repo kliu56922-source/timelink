@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "station_order": ["player_graveyard", "od_companion", "player_deck"],
+  "station_scale": {
+    "player_graveyard": 0.78,
+    "od_companion": 1.0,
+    "player_deck": 0.78
+  },
+  "station_visual_offset": {
+    "player_graveyard": {"x": -2.98, "y": 0.02, "z": -2.36},
+    "od_companion":     {"x": 0.0, "y": 0.02, "z": 0.0},
+    "player_deck":      {"x": -1.71, "y": 0.02, "z": -0.77}
+  },
+  "hitbox_size": {"x": 1.0, "y": 0.45, "z": 1.0},
+  "label_height": 0.32,
+  "safe_margin_px": 12,
+  "pulse_seconds": 0.65,
+  "evolution_seconds": 1.0,
+  "depth_jitter_amplitude": 0.03,
+  "floating_labels_visible": false,
+  "surface_plaque_rotation_degrees_x": -90.0,
+  "deck_stack_layers": 4,
+  "layer_colors": ["#41D17A", "#2FD0D0", "#4C96E8", "#9B59C6", "#FF4D24"]
+}

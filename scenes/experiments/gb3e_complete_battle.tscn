@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/experiments/gb2b_integrated_battle.tscn" id="1_base"]
+[ext_resource type="Script" path="res://scenes/experiments/gb3e_complete_battle.gd" id="2_script"]
+
+[node name="CompleteBattle" instance=ExtResource("1_base")]
+script = ExtResource("2_script")
+
+[node name="Title" parent="GB1HelpLayer/GB1HelpPanel/Body" index="0"]
+text = "阵地对决 · 连锁战斗"
+
+[node name="Description" parent="GB1HelpLayer/GB1HelpPanel/Body" index="1"]
+text = "建堡驻防或直接进攻，把优势转成终结。\n热量、超频、控制三条连锁均可组齐；留意出牌顺序。\n热量足够时可用 OD 释放，但要保留能行动的棋子与战术指令。"
