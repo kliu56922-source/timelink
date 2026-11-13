@@ -4,7 +4,7 @@
 
 > 这是个人项目，用于展示系统设计能力：资源模型、风险刻度、卡牌与建筑的规则表、以及把「一次出一张牌」改造成「一次规划一整条链」的迭代过程。
 
-**Windows 可玩版**：[Releases](https://github.com/kliu56922-source/timelink/releases)　|　**作品集 PDF**：[docs/作品集-案例合集.pdf](docs/作品集-案例合集.pdf)　|　**设计文档**：[docs/系统设计文档.pdf](docs/系统设计文档.pdf)
+**Windows 可玩版**：[Releases](https://github.com/kliu56922-source/timelink/releases)　|　**作品集 PDF**：[docs/作品集-案例合集.pdf](docs/作品集-案例合集.pdf)　|　**设计文档**：[docs/系统设计文档.pdf](docs/系统设计文档.pdf)　|　**对标与取舍**：[docs/对标与设计取舍.pdf](docs/对标与设计取舍.pdf)
 
 ![gameplay](screenshots/gameplay.png)
 
@@ -67,6 +67,8 @@
 - 只有四条展开链中的「阵地链」接入了完整结算，其余三条是路线预览
 - 界面为灰盒阶段，美术是占位素材
 - 仅验证过 Windows 平台
+- **没有真人试玩数据**：这个项目用「同类游戏对标 + 参数区间反推」代替试玩验证，
+  具体见 [docs/对标与设计取舍.pdf](docs/对标与设计取舍.pdf)，里面也写了我认为它目前哪里不成立
 
 ## 许可
 
